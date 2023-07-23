@@ -1,0 +1,39 @@
+---
+import shapeLight from "/images/shape-experience.svg";
+import vectorExperience from "/icons/vector-experience.svg";
+
+import DataExperience from "./DataExperience";
+---
+
+<section id="experience" class="bg-gradient-to-b from-[#0E1F2A] to-[#111721]">
+  <div class="max-w-7xl m-auto px-5 py-14">
+    <div class="flex justify-center flex-col items-center gap-5">
+      <div class="relative md:w-[580px] w-[307px]">
+        <img
+          src={shapeLight}
+          alt="about shape vickyadrii"
+          class="absolute bottom-2 xl:w-auto md:w-56 w-48"
+        />
+        <h2
+          class="relative z-10 md:text-[56px] text-[30px] md:text-left font-bold"
+        >
+          🏢 Work Experiences
+        </h2>
+        <img
+          src={vectorExperience}
+          alt="projects shape vickyadrii"
+          class="absolute top-0 right-0 md:w-12 w-6"
+        />
+      </div>
+      <p
+        class="xl:text-2xl md:text-base text-sm xl:leading-9 text-center text-medium xl:max-w-[65rem] text-[#98A0AC]"
+      >
+        I have gained valuable experience by actively contributing to the growth
+        of an educational startup and interning at a reputable software house,
+        where I worked as a skilled front-end engineer.
+      </p>
+    </div>
+
+    <DataExperience client:load />
+  </div>
+</section>

@@ -1,15 +1,20 @@
 ---
+import Home from "../components/Home/Home.astro";
+import About from "../components/About/About.astro";
+import Projects from "../components/Projects/Projects.astro";
+import Skills from "../components/Skills/Skills.astro";
+import Experience from "../components/Experience/Experience.astro";
+import MainLayout from "../layouts/main-layout.astro";
+import DarkLayout from "../layouts/dark-layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Vicky Adri - Frontend Engineer">
+  <Home />
+  <About />
+  <Projects />
+</MainLayout>
+
+<DarkLayout>
+  <Skills />
+  <Experience />
+</DarkLayout>

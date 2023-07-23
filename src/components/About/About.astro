@@ -1,0 +1,35 @@
+---
+import aboutImage from "/images/about-image.svg";
+import aboutShape from "/images/shape.svg";
+import BurstBload from "./BurstBload";
+---
+
+<section id="profile" class="flex justify-center w-full">
+  <div class="flex items-center md:flex-row flex-col justify-between md:gap-5 gap-10">
+    <div class="xl:basis-[58%] md:basis-[55%] flex flex-col gap-5">
+      <div class="relative md:max-w-[384px] max-w-[215px]">
+        <img
+          src={aboutShape}
+          alt="about shape vickyadrii"
+          class="absolute -z-10 bottom-2 xl:w-auto md:w-56 w-48"
+        />
+        <h2 class="md:text-[56px] text-[30px] font-bold text-primary">👨‍💻 About Me</h2>
+        <!-- <img
+          src={burstBload}
+          alt="about shape vickyadrii"
+          class="absolute -z-10 top-0 md:right-4 right-5 md:w-auto w-6"
+        /> -->
+        <BurstBload client:load />
+      </div>
+      <p class="xl:text-2xl md:text-base text-sm xl:leading-9 text-medium">
+        Hello, I’m Vicky! I’m dedicated to continuously expanding my knowledge
+        and skills in <span class="font-bold">front-end development</span> and learning
+        new technologies. I'm able to develop web applications, consume APIs and
+        strive to deliver high-quality code.
+      </p>
+    </div>
+    <div class="xl:basis-[42%] md:basis-[45%] flex justify-end">
+      <img src={aboutImage} alt="about image vickyadrii" class="xl:w-auto md:w-9/12 w-9/12" />
+    </div>
+  </div>
+</section>

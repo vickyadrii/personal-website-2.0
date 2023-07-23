@@ -1,0 +1,44 @@
+---
+import shape from "/images/shape-light.svg";
+import newSkills from "/icons/new.svg";
+
+import DataSkills from "./DataSkills";
+---
+
+<section id="skills" class="bg-gradient-to-b from-[#1E232B] to-[#0E1F2A]">
+  <div class="max-w-7xl m-auto px-5 py-10">
+    <div class="flex flex-col gap-5">
+      <div class="relative md:w-[595px] md:pt-4 pt-1 w-[325px]">
+        <img
+          src={shape}
+          alt="about shape vickyadrii"
+          class="absolute bottom-2 xl:w-auto md:w-56 w-48"
+        />
+        <h2
+          class="relative md:text-[56px] z-20 text-[30px] md:text-left font-bold"
+        >
+          🎯 Specialized Skills
+        </h2>
+        <div class="absolute flex items-center top-0 right-0">
+          <img
+            src={newSkills}
+            alt="new skill vickyadrii"
+            class="md:w-auto w-8"
+          />
+          <span
+            class="rotate-[35deg] md:mt-5 mt-4 md:-ml-1 -ml-[1px] md:text-base text-xs"
+            >😜</span
+          >
+        </div>
+      </div>
+      <p
+        class="xl:text-2xl md:text-base text-sm xl:leading-9 text-medium xl:max-w-[38rem] text-[#98A0AC]"
+      >
+        I am someone who enjoys seeking challenges. Here are a few skills that I
+        have developed and honed.
+      </p>
+    </div>
+
+    <DataSkills client:load />
+  </div>
+</section>
