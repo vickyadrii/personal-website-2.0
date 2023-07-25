@@ -1,8 +1,6 @@
-# Vicky Herdiansyah Adri - Frontend Engineer
+# Vicky Herdiansyah Adri - Personal Website
 
 I'm so happy to build this website 🤩
-
-Have any project ideas in mind? Feel free to reach out to me 😉
 
 ## About This Website
 - Built with Astro 🚀
