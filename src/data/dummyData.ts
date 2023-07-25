@@ -1,9 +1,9 @@
 // Import assets social media
 import instagram from "/icons/social-media/instagram.svg";
-import medium from "/icons/social-media/medium.svg";
-import linkedin from "/icons/social-media/linkedin.svg";
-import github from "/icons/social-media/github.svg";
-import email from "/icons/social-media/email.svg";
+import medium from "/icons/social-media/medium.png";
+import linkedin from "/icons/social-media/linkedin.png";
+import github from "/icons/social-media/github.png";
+import email from "/icons/social-media/email.png";
 
 // Import assets projects and skills
 import badonorDarah from "/images/badonordarah.png";
