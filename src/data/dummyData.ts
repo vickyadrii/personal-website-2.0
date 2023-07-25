@@ -11,10 +11,10 @@ import hrev from "/images/hrev.png";
 import impactPalu from "/images/impact-palu.png";
 import snResidence from "/images/sn-residence.png";
 
-import logoBadonorDarah from "/icons/logo-badonordarah.svg";
-import logoHrev from "/icons/logo-hrev.svg";
-import logoimpactPalu from "/icons/logo-impact-palu.svg";
-import logoSnResidence from "/icons/logo-sn-residence.svg";
+import logoBadonorDarah from "/icons/logo-badonordarah.png";
+import logoHrev from "/icons/logo-hrev.png";
+import logoimpactPalu from "/icons/logo-impact-palu.png";
+import logoSnResidence from "/icons/logo-sn-residence.png";
 
 import nextjs from "/icons/tech-stack/nextjs.svg";
 import nextjsDark from "/icons/tech-stack/nextjs-dark.svg";
