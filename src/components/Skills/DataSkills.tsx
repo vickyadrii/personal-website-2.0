@@ -31,7 +31,7 @@ const DataSkills = () => {
       variants={containerSocialMedia}
       initial="hidden"
       animate="visible"
-      className="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-4 xl:gap-10 md:gap-8 gap-4 items-center mt-12"
+      className="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-4 xl:gap-10 md:gap-8 gap-7 items-center mt-12"
     >
       {dataSkills.map((data, index) => {
         return (

@@ -4,7 +4,7 @@ import shapeHeader from "/images/header-shape.png";
 ---
 
 <section id="home" class="flex justify-center items-center h-screen">
-  <div class="flex flex-col items-center xl:gap-2 gap-3">
+  <div class="flex flex-col items-center gap-3">
     <div class="flex flex-col items-center">
       <h2 class="text-primary font-extrabold xl:text-5xl md:text-4xl text-xl">
         Vicky Herdiansyah Adri.
@@ -13,18 +13,21 @@ import shapeHeader from "/images/header-shape.png";
         <img
           src={shapeHeader}
           alt="shape header"
-          class="absolute -z-10 bottom-0 xl:w-auto md:w-80 w-24"
+          class="absolute -z-10 md:bottom-0 bottom-1.5 xl:w-auto md:w-80 w-28"
         />
         <h1
           class="mx-2 text-transparent bg-clip-text bg-gradient-to-r from-[#1487B9] to-[#1FC2F0] xl:text-[82px] md:text-[70px] text-[32px] font-bold"
         >
-          Front-end Engineer
+          Frontend Engineer
         </h1>
       </div>
     </div>
-    <p class="md:text-2xl max-w-2xl text-center text-grey">
-      <span class="font-semibold">2+ years of experience,</span> using React.js and
-      TypeScript for developing a website and web applications.
+    <p
+      class="md:text-[24px] max-w-3xl text-center text-grey md:leading-10 leading-6"
+    >
+      <span class="font-semibold"
+        >2+ years of experience in front-end development,</span
+      > using React.js for developing a website and web applications.
     </p>
     <SocialMedia client:load />
   </div>
