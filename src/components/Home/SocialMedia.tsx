@@ -30,15 +30,15 @@ const SocialMedia: React.FC = () => {
       animate="visible"
     >
       {dataLogoSocialMedia.map(({ id, logo, navigate }) => (
-        <a href={navigate} key={id}>
+        <a href={navigate} key={id} className={`xl:w-[90px] xl:h-[90px] md:w-24 md:h-24 w-14 h-14 cursor-pointer ${
+          id === 1 || id === 2 ? "md:mt-20 mt-12" : "mt-0"
+        }`}>
           <motion.img
             src={logo}
             alt="logo"
             whileHover={{ scale: 1.13, rotate: 10 }}
             whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
-            className={`xl:w-[90px] xl:h-[90px] md:w-24 md:h-[24px] w-14 h-14 cursor-pointer ${
-              id === 1 || id === 2 ? "md:mt-20 mt-12" : "mt-auto"
-            }`}
+
             variants={item}
           />
         </a>
