@@ -80,7 +80,7 @@ export const dataLogoSocialMedia: LogoSocialMedia[] = [
   {
     id: 2,
     logo: github,
-    navigate: "https://github.com/vickyadri29",
+    navigate: "https://github.com/vickyadrii",
   },
   {
     id: 3,
