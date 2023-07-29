@@ -6,13 +6,11 @@ const HomeContent = () => {
   const containerHomeVariants = {
     hidden: {
       opacity: 0,
-      x: -50,
-      y: 10,
+      x: -25,
     },
     visible: {
       opacity: 1,
       x: 0,
-      y: 0,
       transition: {
         delay: 0.2,
         type: "spring",
