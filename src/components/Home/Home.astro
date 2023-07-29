@@ -1,34 +1,11 @@
 ---
 import SocialMedia from "./SocialMedia";
-import shapeHeader from "/images/header-shape.png";
+import HomeContent from "./HomeContent";
 ---
 
 <section id="home" class="flex justify-center items-center h-screen">
   <div class="flex flex-col items-center gap-3">
-    <div class="flex flex-col items-center">
-      <h2 class="text-primary font-extrabold xl:text-5xl md:text-4xl text-xl">
-        Vicky Herdiansyah Adri.
-      </h2>
-      <div class="relative -z-10">
-        <img
-          src={shapeHeader}
-          alt="shape header"
-          class="absolute -z-10 md:bottom-0 bottom-1.5 xl:w-auto md:w-80 w-28"
-        />
-        <h1
-          class="mx-2 text-transparent bg-clip-text bg-gradient-to-r from-[#1487B9] to-[#1FC2F0] xl:text-[82px] md:text-[70px] text-[32px] font-bold"
-        >
-          Frontend Engineer
-        </h1>
-      </div>
-    </div>
-    <p
-      class="md:text-[24px] max-w-3xl text-center text-slate-500 md:leading-10 leading-6"
-    >
-      <span class="font-semibold"
-        >2+ years of experience in front-end development,</span
-      > using React.js for developing a website and web applications.
-    </p>
+    <HomeContent client:load />
     <SocialMedia client:load />
   </div>
 </section>

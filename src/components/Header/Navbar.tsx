@@ -11,6 +11,7 @@ const Navbar: React.FC = () => {
       top: 0,
       transition: {
         duration: 0.8,
+        type: 'spring'
       },
     },
   };
