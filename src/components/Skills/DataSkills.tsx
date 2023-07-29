@@ -8,7 +8,7 @@ const DataSkills = () => {
   const [isHover, setIsHover] = useState(false);
   const [dataIndex, setDataIndex] = useState(0);
 
-  const isInView = useInView(ref, { once: true });
+  const isScroll = useInView(ref, { once: true });
   const mainControls = useAnimation();
 
   const containerSocialMedia = {
@@ -32,11 +32,11 @@ const DataSkills = () => {
   };
 
   useEffect(() => {
-    console.log(isInView);
-    if (isInView) {
+    console.log(isScroll);
+    if (isScroll) {
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isScroll]);
 
   return (
     <motion.div
