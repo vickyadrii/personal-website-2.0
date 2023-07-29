@@ -1,10 +1,15 @@
-import { useState } from "react";
-import { dataSkills } from "../../data/dummyData"
-import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { dataSkills } from "../../data/dummyData";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const DataSkills = () => {
+  const ref = useRef(null);
+
   const [isHover, setIsHover] = useState(false);
   const [dataIndex, setDataIndex] = useState(0);
+
+  const isInView = useInView(ref, { once: true });
+  const mainControls = useAnimation();
 
   const containerSocialMedia = {
     hidden: { opacity: 1, scale: 0 },
@@ -13,24 +18,32 @@ const DataSkills = () => {
       scale: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.090,
+        staggerChildren: 0.09,
       },
     },
   };
 
   const item = {
-    hidden: { x: -6, opacity: 0 },
+    hidden: { x: -11, opacity: 0 },
     visible: {
-      x: 0,
       opacity: 1,
+      x: 0,
     },
   };
 
+  useEffect(() => {
+    console.log(isInView);
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  }, [isInView]);
+
   return (
     <motion.div
-      variants={containerSocialMedia}
+      ref={ref}
+      animate={mainControls}
       initial="hidden"
-      animate="visible"
+      variants={containerSocialMedia}
       className="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-4 xl:gap-10 md:gap-8 gap-7 items-center mt-12"
     >
       {dataSkills.map((data, index) => {
@@ -51,7 +64,9 @@ const DataSkills = () => {
                 //   key={index}
                 alt="logo skills vickyadrii"
                 className={`${
-                  index === 0 || index === 6 ? "md:w-[90px] w-[80px]" : "md:w-16 w-6"
+                  index === 0 || index === 6
+                    ? "md:w-[90px] w-[80px]"
+                    : "md:w-16 w-6"
                 }`}
               />
             </motion.div>
