@@ -6,8 +6,8 @@ const HomeContent = () => {
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, x: -120 }}
-        animate={{ opacity: 1, x: 0, }}
+        initial={{ opacity: 0, x: -50, y: 10 }}
+        animate={{ opacity: 1, x: 0, y: 0 }}
         transition={{ delay: 0.2, type: "spring", stiffness: 150 }}
         className="flex flex-col items-center"
       >
