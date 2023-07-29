@@ -3,12 +3,43 @@ import { motion } from "framer-motion";
 import shapeHeader from "/images/header-shape.png";
 
 const HomeContent = () => {
+  const containerHomeVariants = {
+    hidden: {
+      opacity: 0,
+      x: -50,
+      y: 10,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        delay: 0.2,
+        type: "spring",
+        stiffness: 150,
+      },
+    },
+  };
+
+  const descriptionHomeVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.8,
+        duration: 1.5,
+      },
+    },
+  };
+
   return (
     <>
       <motion.div
-        initial={{ opacity: 0, x: -50, y: 10 }}
-        animate={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ delay: 0.2, type: "spring", stiffness: 150 }}
+        initial="hidden"
+        animate="visible"
+        variants={containerHomeVariants}
         className="flex flex-col items-center"
       >
         <h2 className="text-primary font-extrabold xl:text-5xl md:text-4xl text-xl">
@@ -26,9 +57,9 @@ const HomeContent = () => {
         </div>
       </motion.div>
       <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.8, duration: 1.5 }}
+        initial="hidden"
+        animate="visible"
+        variants={descriptionHomeVariants}
         className="md:text-[24px] max-w-3xl text-center text-slate-500 md:leading-10 leading-6"
       >
         <span className="font-semibold">
