@@ -1,0 +1,63 @@
+---
+import myPhoto from "/images/me.png";
+import email from "/icons/social-media/gmail-light.svg";
+import linkedin from "/icons/social-media/linkedin-light.svg";
+---
+
+<section id="contact" class="bg-gradient-to-br from-[#091318] to-[#060D11]">
+  <div
+    class="max-w-7xl m-auto px-5 py-10 flex flex-col justify-between md:gap-0 gap-10 text-[#E2FBFF] xl:h-screen"
+  >
+    <div class="flex flex-col md:gap-20 gap-12 md:my-16 my-2">
+      <h2 class="md:text-5xl text-2xl md:font-bold font-semibold">
+        👋 Let's get connected!
+      </h2>
+      <div class="flex flex-col md:gap-16 gap-5">
+        <h1 class="md:text-[82px] text-4xl font-bold md:leading-[100px] xl:leading-none">
+          Do you have any project ideas?
+        </h1>
+        <h1 class="md:text-[82px] text-4xl font-bold md:leading-[100px] xl:leading-none">
+          Feel free to get in touch! 😉
+        </h1>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-7">
+      <div class="max-w-2xl">
+        <h3
+          class="md:text-[24px] text-lg md:font-semibold md:leading-9"
+        >
+          Ready, set, discuss! I'm like a ball of energy, eager to sprinkle some
+          magic on your projects! 🚀
+        </h3>
+      </div>
+      <div class="flex md:flex-row flex-col md:items-center gap-5">
+        <img
+          src={myPhoto}
+          alt=""
+          class="md:w-40 w-24 rounded-full shadow-[0px_1px_5px_0px_#000]"
+        />
+        <div class="flex flex-col gap-4">
+          <h3 class="md:text-[24px] text-lg font-semibold">Contact me on:</h3>
+          <div class="flex flex-col gap-1.5">
+            <div class="flex items-center gap-2.5">
+              <img src={email} alt="gmail" />
+              <p class="md:text-xl">vickyadri103@gmail.com</p>
+            </div>
+            <div class="h-[2px] bg-[#E2FBFF] md:w-auto w-64"></div>
+            <div class="flex items-center gap-2.5">
+              <img src={linkedin} alt="linkedin" />
+              <p class="md:text-xl">https://linkedin.com/vickyadrii</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:max-w-7xl max-w-xs">
+      <span class="md:text-lg text-sm md:font-medium">
+        Built with Astro and designed using Figma by Vicky Herdiansyah Adri
+      </span>
+    </div>
+  </div>
+</section>

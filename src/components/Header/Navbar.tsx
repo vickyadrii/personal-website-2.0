@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import { dataNavbar } from "../../data/dummyData";
 import { motion } from "framer-motion";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 
 const Navbar: React.FC = () => {
   const containerNavbar = {
@@ -25,16 +25,13 @@ const Navbar: React.FC = () => {
       >
         <motion.ul className="xl:flex hidden items-center gap-24 px-20 py-5 bg-white/30 border backdrop-blur-sm drop-shadow-sm hover:drop-shadow-lg transition-all duration-200 rounded-full">
           {dataNavbar.map(({ id, navigate, navigate_url }) => (
-            <Link
+            <a
               key={id}
-              to={navigate_url}
-              smooth={true}
-              duration={450}
-              offset={-100}
+              href={navigate_url}
               className="text-primary opacity-30 hover:opacity-80 font-semibold cursor-pointer"
             >
               {navigate}
-            </Link>
+            </a>
           ))}
         </motion.ul>
       </motion.nav>
