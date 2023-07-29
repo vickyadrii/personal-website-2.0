@@ -32,7 +32,6 @@ const DataSkills = () => {
   };
 
   useEffect(() => {
-    console.log(isScroll);
     if (isScroll) {
       mainControls.start("visible");
     }
