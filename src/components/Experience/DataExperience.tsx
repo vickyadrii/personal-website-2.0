@@ -1,8 +1,52 @@
+import { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
+
 import { dataExperience } from "../../data/dummyData";
 
 const DataExperience: React.FC = () => {
+  const ref = useRef(null);
+
+  const isScroll = useInView(ref, { once: true });
+  const aboutContentControls = useAnimation();
+
+  const aboutContentVariants = {
+    hidden: { opacity: 0, x: -12 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        delayChildren: 0.5,
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { x: -50, opacity: 0 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "spring",
+        stiffness: 80,
+      },
+    },
+  };
+
+  useEffect(() => {
+    if (isScroll) {
+      aboutContentControls.start("visible");
+    }
+  }, [isScroll]);
+
   return (
-    <div className="grid grid-cols-1 gap-12 mt-12">
+    <motion.div
+      ref={ref}
+      animate={aboutContentControls}
+      initial="hidden"
+      variants={aboutContentVariants}
+      className="grid grid-cols-1 gap-12 mt-12"
+    >
       {dataExperience.map(
         ({
           id,
@@ -33,7 +77,7 @@ const DataExperience: React.FC = () => {
               alt="pattern vickyadrii"
               className="xl:absolute hidden h-full w-80"
             />
-            <div className="md:p-10 p-6">
+            <motion.div variants={item} className="md:p-10 p-6">
               <div className="flex xl:flex-row xl:gap-0 gap-5 flex-col items-start">
                 <div className="basis-[20%] flex xl:justify-center">
                   <img
@@ -100,11 +144,11 @@ const DataExperience: React.FC = () => {
                   </p>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         )
       )}
-    </div>
+    </motion.div>
   );
 };
 
