@@ -11,20 +11,21 @@ const DataSkills = () => {
   const isScroll = useInView(ref, { once: true });
   const mainControls = useAnimation();
 
-  const containerSocialMedia = {
-    hidden: { opacity: 1, scale: 0 },
+  const containerDataSkills = {
+    hidden: { x: -11, opacity: 0 },
     visible: {
       opacity: 1,
-      scale: 1,
+      // scale: 1,
+      x: 0,
       transition: {
-        delayChildren: 0.3,
+        delayChildren: 0.5,
         staggerChildren: 0.09,
       },
     },
   };
 
   const item = {
-    hidden: { x: -11, opacity: 0 },
+    hidden: { x: -12, opacity: 0 },
     visible: {
       opacity: 1,
       x: 0,
@@ -42,7 +43,7 @@ const DataSkills = () => {
       ref={ref}
       animate={mainControls}
       initial="hidden"
-      variants={containerSocialMedia}
+      variants={containerDataSkills}
       className="grid xl:grid-cols-6 md:grid-cols-4 grid-cols-4 xl:gap-10 md:gap-8 gap-7 items-center mt-12"
     >
       {dataSkills.map((data, index) => {

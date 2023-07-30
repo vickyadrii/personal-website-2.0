@@ -10,7 +10,7 @@ const AboutImage: React.FC = () => {
   const aboutContentControls = useAnimation();
 
   const aboutContentVariants = {
-    hidden: { opacity: 0, x: 400, y: 100 },
+    hidden: { opacity: 0, x: 75, y: 12 },
     visible: {
       opacity: 1,
       x: 0,

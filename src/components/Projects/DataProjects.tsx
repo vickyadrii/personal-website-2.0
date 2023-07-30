@@ -1,14 +1,68 @@
+import { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
+
 import { dataProjectss } from "../../data/dummyData";
 
 const DataProjects: React.FC = () => {
+  const ref = useRef(null);
+
+  const isScroll = useInView(ref, { once: false });
+  const aboutContentControls = useAnimation();
+
+  const dataProjectsVariants = {
+    hidden: { opacity: 0, y: 75 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        delayChildren: 0.5,
+        staggerChildren: 0.2,
+        duration: 0.5,
+        delay: 0.25,
+        type: "spring",
+        stiffness: 80,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { x: 75, opacity: 0, scale: 1.2 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      scale: 1,
+      duration: {
+        type: "spring",
+        stiffness: 100,
+      },
+    },
+  };
+
+  useEffect(() => {
+    if (isScroll) {
+      aboutContentControls.start("visible");
+    }
+  }, [isScroll]);
+
   return (
-    <div className="grid md:grid-cols-2 md:gap-x-14  md:gap-y-8 gap-y-6 md:mt-14 mt-8">
+    <motion.div
+      ref={ref}
+      animate={aboutContentControls}
+      initial="hidden"
+      variants={dataProjectsVariants}
+      className="grid md:grid-cols-2 md:gap-x-14  md:gap-y-8 gap-y-6 md:mt-14 mt-8"
+    >
       {dataProjectss.map(({ id, img_url, logo, type, tech_stack_logo }) => (
         <div
           key={id}
           className="flex justify-center flex-col p-4 gap-3 bg-white drop-shadow-sm hover:drop-shadow-lg cursor-pointer md:rounded-xl rounded-md  transition-all"
         >
-          <img src={img_url} alt="projects vickyadrii" />
+          <motion.img
+            ref={ref}
+            variants={item}
+            src={img_url}
+            alt="projects vickyadrii"
+          />
           <div className="flex flex-col gap-2.5 items-start">
             <img
               src={logo}
@@ -33,7 +87,7 @@ const DataProjects: React.FC = () => {
           </div>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
