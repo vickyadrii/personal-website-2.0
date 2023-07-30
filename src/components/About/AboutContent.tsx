@@ -11,7 +11,7 @@ const AboutContent: React.FC = () => {
   const aboutContentControls = useAnimation();
 
   const aboutContentVariants = {
-    hidden: { opacity: 0, x: -11 },
+    hidden: { opacity: 0, x: -12 },
     visible: {
       opacity: 1,
       x: 0,
@@ -23,7 +23,7 @@ const AboutContent: React.FC = () => {
   };
 
   const item = {
-    hidden: { x: -11, y: 100, opacity: 0 },
+    hidden: { x: -11, y: 50, opacity: 0 },
     visible: {
       opacity: 1,
       x: 0,

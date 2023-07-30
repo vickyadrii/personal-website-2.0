@@ -11,7 +11,7 @@ const ProjectsContent: React.FC = () => {
   const aboutContentControls = useAnimation();
 
   const projectsContentVariants = {
-    hidden: { opacity: 0, y: 75 },
+    hidden: { opacity: 0, y: 12 },
     visible: {
       opacity: 1,
       y: 0,
