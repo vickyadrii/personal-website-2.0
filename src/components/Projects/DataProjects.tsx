@@ -26,11 +26,10 @@ const DataProjects: React.FC = () => {
   };
 
   const item = {
-    hidden: { x: 75, opacity: 0, scale: 1.2 },
+    hidden: { x: 75, opacity: 0 },
     visible: {
       opacity: 1,
       x: 0,
-      scale: 1,
       duration: {
         type: "spring",
         stiffness: 100,
