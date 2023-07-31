@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
   return (
     <Fragment>
       <motion.nav
-        className="flex justify-center top-0 fixed left-1/2 z-50 -translate-x-1/2 my-5"
+        className="flex justify-center absolute left-1/2 z-50 -translate-x-1/2 my-5"
         variants={containerNavbar}
         initial="hidden"
         animate="visible"
