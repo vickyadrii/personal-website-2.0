@@ -50,7 +50,7 @@ const HomeContent = () => {
             className="absolute -z-10 md:bottom-0 bottom-1.5 xl:w-auto md:w-80 w-28"
           />
           <h1 className="mx-2 text-transparent bg-clip-text bg-gradient-to-r from-[#1487B9] to-[#1FC2F0] xl:text-[82px] md:text-[70px] text-[32px] font-bold">
-            Front-end Engineer
+            Frontend Engineer
           </h1>
         </div>
       </motion.div>
