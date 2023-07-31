@@ -4,6 +4,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { dataExperience } from "../../data/dummyData";
 
 const DataExperience: React.FC = () => {
+  
   const ref = useRef(null);
 
   const isScroll = useInView(ref, { once: true });
