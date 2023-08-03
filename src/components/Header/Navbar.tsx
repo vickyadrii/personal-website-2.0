@@ -30,6 +30,8 @@ const Navbar: React.FC = () => {
               to={navigate_url}
               offset={offset}
               key={id}
+              duration={500}
+              smooth={true}
               className="text-primary opacity-40 hover:opacity-80 font-semibold cursor-pointer"
             >
               {navigate}
