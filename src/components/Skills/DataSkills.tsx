@@ -5,8 +5,8 @@ import { motion, useAnimation, useInView } from "framer-motion";
 const DataSkills = () => {
   const ref = useRef(null);
 
-  const [isHover, setIsHover] = useState(false);
-  const [dataIndex, setDataIndex] = useState(0);
+  const [isHover, setIsHover] = useState<boolean>(false);
+  const [dataIndex, setDataIndex] = useState<number>(0);
 
   const isScroll = useInView(ref, { once: true });
   const mainControls = useAnimation();

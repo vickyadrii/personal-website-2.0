@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { dataNavbar } from "../../data/dummyData";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
