@@ -100,6 +100,7 @@ export const dataProjectss: Projects[] = [
     logo: logoBadonorDarah,
     type: "Medical Apps •",
     tech_stack_logo: [react, vite, tailwind, express],
+    navigate_url: "https://www.badonordarah.id",
   },
   {
     id: 1,
@@ -107,6 +108,7 @@ export const dataProjectss: Projects[] = [
     logo: logoHrev,
     type: "Landing Page •",
     tech_stack_logo: [react, typescript, vite, tailwind],
+    navigate_url: "https://halohrev.com",
   },
   {
     id: 2,
@@ -114,6 +116,7 @@ export const dataProjectss: Projects[] = [
     logo: logoimpactPalu,
     type: "Company Profile •",
     tech_stack_logo: [react, nextjsDark, tailwind],
+    navigate_url: "https://impactpalu-fe.vercel.app",
   },
   {
     id: 3,
@@ -121,6 +124,7 @@ export const dataProjectss: Projects[] = [
     logo: logoSnResidence,
     type: "Company Profile •",
     tech_stack_logo: [react, tailwind],
+    navigate_url: "https://sn-residence-dev.vercel.app",
   },
 ];
 
