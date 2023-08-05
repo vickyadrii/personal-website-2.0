@@ -100,7 +100,7 @@ export const dataProjectss: Projects[] = [
     logo: logoBadonorDarah,
     type: "Medical Apps •",
     tech_stack_logo: [react, vite, tailwind, express],
-    navigate_url: "https://www.badonordarah.id",
+    navigate_url: "/",
   },
   {
     id: 1,
