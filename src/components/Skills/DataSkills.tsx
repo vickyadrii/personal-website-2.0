@@ -15,7 +15,6 @@ const DataSkills = () => {
     hidden: { x: -11, opacity: 0 },
     visible: {
       opacity: 1,
-      // scale: 1,
       x: 0,
       transition: {
         delayChildren: 0.5,
@@ -61,7 +60,6 @@ const DataSkills = () => {
             >
               <img
                 src={data}
-                //   key={index}
                 alt="logo skills vickyadrii"
                 className={`${
                   index === 0 || index === 6
