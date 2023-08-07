@@ -57,7 +57,7 @@ const DataProjects: React.FC = () => {
             href={navigate_url}
             key={id}
             aria-disabled={"true"}
-            className="flex justify-center flex-col p-4 gap-3 bg-white drop-shadow-sm hover:drop-shadow-lg cursor-pointer md:rounded-xl rounded-md  transition-all"
+            className="flex justify-center flex-col p-4 gap-3 bg-white drop-shadow-sm hover:drop-shadow-md hover:scale-[1.010] cursor-pointer md:rounded-xl rounded-md transition-all duration-150 ease-in"
           >
             <motion.img
               ref={ref}
