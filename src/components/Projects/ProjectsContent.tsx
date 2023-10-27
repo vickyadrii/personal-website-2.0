@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-import aboutShape from "/images/shape.svg";
-import burstBloadTwo from "/icons/burst-bloat-2.svg";
+import aboutShape from "../../assets/images/shape.svg";
+import burstBloadTwo from "../../assets/icons/burst-bloat-2.svg";
 
 const ProjectsContent: React.FC = () => {
   const ref = useRef(null);

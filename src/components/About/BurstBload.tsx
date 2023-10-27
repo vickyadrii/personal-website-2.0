@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import burstBloadIcons from "/icons/burst-bloat.svg";
+import burstBloadIcons from "../../assets/icons/burst-bloat.svg";
 
 const BurstBload: React.FC = () => {
   return (
