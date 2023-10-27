@@ -43,7 +43,7 @@ const ProjectsContent: React.FC = () => {
         <img
           src={aboutShape}
           decoding="async"
-          loading="lazy"
+          loading="eager"
           alt="about shape vickyadrii"
           className="absolute -z-10 bottom-2 xl:w-auto md:w-56 w-48"
         />
@@ -51,7 +51,7 @@ const ProjectsContent: React.FC = () => {
         <img
           src={burstBloadTwo}
           decoding="async"
-          loading="lazy"
+          loading="eager"
           alt="projects shape vickyadrii"
           className="absolute -z-10 top-0 -right-1 md:w-12 w-6"
         />

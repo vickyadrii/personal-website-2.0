@@ -40,14 +40,11 @@ const HomeContent = () => {
         variants={containerHomeVariants}
         className="flex flex-col items-center"
       >
-        <h2 className="text-primary font-extrabold xl:text-5xl md:text-4xl text-xl">
-          Vicky Herdiansyah Adri.
-        </h2>
+        <h2 className="text-primary font-extrabold xl:text-5xl md:text-4xl text-xl">Vicky Herdiansyah Adri.</h2>
         <div className="relative -z-10">
           <img
             src={shapeHeader}
-            decoding="async"
-            loading="lazy"
+            loading="eager"
             alt="shape header"
             className="absolute -z-10 md:bottom-0 bottom-1.5 xl:w-auto md:w-80 w-28"
           />
@@ -62,10 +59,8 @@ const HomeContent = () => {
         variants={descriptionHomeVariants}
         className="md:text-[24px] max-w-3xl text-center text-slate-500 md:leading-10 leading-6"
       >
-        <span className="font-semibold">
-          2+ years of experience in front-end development,
-        </span>{" "}
-        using React.js for developing a website and web applications.
+        <span className="font-semibold">2+ years of experience in front-end development,</span> using React.js for
+        developing a website and web applications.
       </motion.p>
     </>
   );
