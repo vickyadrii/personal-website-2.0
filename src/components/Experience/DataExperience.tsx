@@ -4,7 +4,6 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { dataExperience } from "../../data/dummyData";
 
 const DataExperience: React.FC = () => {
-  
   const ref = useRef(null);
 
   const isScroll = useInView(ref, { once: true });
@@ -75,6 +74,8 @@ const DataExperience: React.FC = () => {
           >
             <img
               src={pattern}
+              decoding="async"
+              loading="lazy"
               alt="pattern vickyadrii"
               className="xl:absolute hidden h-full w-80"
             />
@@ -83,17 +84,15 @@ const DataExperience: React.FC = () => {
                 <div className="basis-[20%] flex xl:justify-center">
                   <img
                     src={logo_url}
+                    decoding="async"
+                    loading="lazy"
                     alt="company logo"
-                    className={`mt-1 ${
-                      id === 0 || id === 1 ? "md:w-auto w-28" : "md:w-auto w-10"
-                    }`}
+                    className={`mt-1 ${id === 0 || id === 1 ? "md:w-auto w-28" : "md:w-auto w-10"}`}
                   />
                 </div>
                 <div className="flex flex-col gap-5 xl:ml-7 basis-[80%]">
                   <div className="flex flex-col xl:gap-1 items-start">
-                    <h3 className="xl:text-[40px] md:text-3xl text-2xl font-semibold">
-                      {name}
-                    </h3>
+                    <h3 className="xl:text-[40px] md:text-3xl text-2xl font-semibold">{name}</h3>
                     <p
                       style={{
                         color: desc_color,
@@ -116,15 +115,10 @@ const DataExperience: React.FC = () => {
                     </p>
                   </div>
                   <div className="flex flex-col gap-4">
-                    <h3 className="md:text-2xl text-xl">
-                      The responsibilities include:
-                    </h3>
+                    <h3 className="md:text-2xl text-xl">The responsibilities include:</h3>
                     <ul className="flex flex-col gap-3 ml-4">
                       {responsibilites.map((data, index) => (
-                        <li
-                          key={index}
-                          className="md:text-base text-sm list-disc"
-                        >
+                        <li key={index} className="md:text-base text-sm list-disc">
                           {data}
                         </li>
                       ))}

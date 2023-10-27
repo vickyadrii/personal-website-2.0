@@ -46,6 +46,8 @@ const HomeContent = () => {
         <div className="relative -z-10">
           <img
             src={shapeHeader}
+            decoding="async"
+            loading="lazy"
             alt="shape header"
             className="absolute -z-10 md:bottom-0 bottom-1.5 xl:w-auto md:w-80 w-28"
           />

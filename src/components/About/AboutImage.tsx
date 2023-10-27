@@ -37,6 +37,8 @@ const AboutImage: React.FC = () => {
       className="xl:basis-[42%] md:basis-[45%] flex justify-end"
     >
       <img
+        decoding="async"
+        loading="lazy"
         src={aboutImage}
         alt="about image vickyadrii"
         className="xl:w-auto md:w-9/12 w-9/12"

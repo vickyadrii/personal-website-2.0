@@ -20,12 +20,12 @@ const ArrowTop: React.FC = () => {
       }
     });
   }, []);
-  
+
   return (
     showButton && (
       <button onClick={goTop} className="fixed md:flex hidden bottom-8 right-8 z-50">
         <div className="p-2 bg-white/70 hover:bg-white border backdrop-blur-sm drop-shadow-sm hover:drop-shadow-md transition-all duration-200 rounded-xl">
-          <img src={arrowTop} alt="" />
+          <img src={arrowTop} alt="" decoding="async" loading="lazy" />
         </div>
       </button>
     )
