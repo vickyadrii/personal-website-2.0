@@ -36,13 +36,7 @@ const AboutImage: React.FC = () => {
       variants={aboutContentVariants}
       className="xl:basis-[42%] md:basis-[45%] flex justify-end"
     >
-      <img
-        decoding="async"
-        loading="lazy"
-        src={aboutImage}
-        alt="about image vickyadrii"
-        className="xl:w-auto md:w-9/12 w-9/12"
-      />
+      <img loading="eager" src={aboutImage} alt="about image vickyadrii" className="xl:w-auto md:w-9/12 w-9/12" />
     </motion.div>
   );
 };
