@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import shapeHeader from "/images/header-shape.png";
+import shapeHeader from "../../assets/images/header-shape.png";
 
 const HomeContent = () => {
   const containerHomeVariants = {

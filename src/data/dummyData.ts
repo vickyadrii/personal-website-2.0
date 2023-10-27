@@ -1,47 +1,47 @@
 // Import assets social media
-import instagram from "/icons/social-media/instagram.svg";
-import medium from "/icons/social-media/medium.webp";
-import linkedin from "/icons/social-media/linkedin.webp";
-import github from "/icons/social-media/github.webp";
-import email from "/icons/social-media/email.webp";
+// import instagram from "../assets/icons/social-media/instagram.svg";
+import medium from "../assets/icons/social-media/medium.webp";
+import linkedin from "../assets/icons/social-media/linkedin.webp";
+import github from "../assets/icons/social-media/github.webp";
+import email from "../assets/icons/social-media/email.webp";
 
 // Import assets projects and skills
-import badonorDarah from "/images/badonordarah.png";
-import hrev from "/images/hrev.png";
-import impactPalu from "/images/impact-palu.png";
-import snResidence from "/images/sn-residence.png";
+import badonorDarah from "../assets/images/badonordarah.png";
+import hrev from "../assets/images/hrev.png";
+import impactPalu from "../assets/images/impact-palu.png";
+import snResidence from "../assets/images/sn-residence.png";
 
-import logoBadonorDarah from "/icons/logo-badonordarah.png";
-import logoHrev from "/icons/logo-hrev.png";
-import logoimpactPalu from "/icons/logo-impact-palu.png";
-import logoSnResidence from "/icons/logo-sn-residence.png";
+import logoBadonorDarah from "../assets/icons/logo-badonordarah.png";
+import logoHrev from "../assets/icons/logo-hrev.png";
+import logoimpactPalu from "../assets/icons/logo-impact-palu.png";
+import logoSnResidence from "../assets/icons/logo-sn-residence.png";
 
-import nextjs from "/icons/tech-stack/nextjs.svg";
-import nextjsDark from "/icons/tech-stack/nextjs-dark.svg";
-import react from "/icons/tech-stack/react.svg";
-import typescript from "/icons/tech-stack/typescript.svg";
-import javascript from "/icons/tech-stack/javascript.svg";
-import redux from "/icons/tech-stack/redux.svg";
-import graphql from "/icons/tech-stack/graphql.svg";
-import nodejs from "/icons/tech-stack/nodejs.svg";
-import tailwind from "/icons/tech-stack/tailwind.svg";
-import antdesign from "/icons/tech-stack/antdesign.svg";
-import mongodb from "/icons/tech-stack/mongodb.svg";
-import postgresql from "/icons/tech-stack/postgresql.svg";
-import firebase from "/icons/tech-stack/firebase.svg";
-import vite from "/icons/tech-stack/vite.svg";
-import express from "/icons/tech-stack/express.svg";
+import nextjs from "../assets/icons/tech-stack/nextjs.svg";
+import nextjsDark from "../assets/icons/tech-stack/nextjs-dark.svg";
+import react from "../assets/icons/tech-stack/react.svg";
+import typescript from "../assets/icons/tech-stack/typescript.svg";
+import javascript from "../assets/icons/tech-stack/javascript.svg";
+import redux from "../assets/icons/tech-stack/redux.svg";
+import graphql from "../assets/icons/tech-stack/graphql.svg";
+import nodejs from "../assets/icons/tech-stack/nodejs.svg";
+import tailwind from "../assets/icons/tech-stack/tailwind.svg";
+import antdesign from "../assets/icons/tech-stack/antdesign.svg";
+import mongodb from "../assets/icons/tech-stack/mongodb.svg";
+import postgresql from "../assets/icons/tech-stack/postgresql.svg";
+import firebase from "../assets/icons/tech-stack/firebase.svg";
+import vite from "../assets/icons/tech-stack/vite.svg";
+import express from "../assets/icons/tech-stack/express.svg";
 
 // import assets experience
-import eduqat from "/icons/company-logo/eduqat.svg";
-import kalla from "/icons/company-logo/kalla.svg";
-import kodingna from "/icons/company-logo/kodingna.svg";
-import bangkit from "/icons/company-logo/bangkit.svg";
+import eduqat from "../assets/icons/company-logo/eduqat.svg";
+import kalla from "../assets/icons/company-logo/kalla.svg";
+import kodingna from "../assets/icons/company-logo/kodingna.svg";
+import bangkit from "../assets/icons/company-logo/bangkit.svg";
 
-import pattern1 from "/images/patterns/pattern1.svg";
-import pattern2 from "/images/patterns/pattern2.svg";
-import pattern3 from "/images/patterns/pattern3.svg";
-import pattern4 from "/images/patterns/pattern4.svg";
+import pattern1 from "../assets/images/patterns/pattern1.svg";
+import pattern2 from "../assets/images/patterns/pattern2.svg";
+import pattern3 from "../assets/images/patterns/pattern3.svg";
+import pattern4 from "../assets/images/patterns/pattern4.svg";
 
 export const dataNavbar: Navbar[] = [
   {

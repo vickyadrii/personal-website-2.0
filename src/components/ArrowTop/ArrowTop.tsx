@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import arrowTop from "/icons/arrow-top.svg";
+import arrowTop from "../../assets/icons/arrow-top.svg";
 
 const ArrowTop: React.FC = () => {
   const [showButton, setShowButton] = useState<boolean>(false);

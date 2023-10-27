@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-import aboutShape from "/images/shape.svg";
+import aboutShape from "../../assets/images/shape.svg";
 import BurstBload from "./BurstBload";
 
 const AboutContent: React.FC = () => {
