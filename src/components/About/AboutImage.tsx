@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-import aboutImage from "../../assets/images/about-image.svg";
+import aboutImage from "../../assets/images/about-image.png";
 
 const AboutImage: React.FC = () => {
   const ref = useRef(null);
