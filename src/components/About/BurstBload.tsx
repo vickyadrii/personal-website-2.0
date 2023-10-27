@@ -7,7 +7,7 @@ const BurstBload: React.FC = () => {
       <motion.img
         src={burstBloadIcons}
         decoding="async"
-        loading="eager"
+        loading="lazy"
         animate={{ scale: [0.8, 0.8, 1.05], rotate: [0, 360] }}
         transition={{ ease: "easeInOut", repeatType: "reverse", repeat: Infinity, duration: 1.2 }}
         alt="about shape vickyadrii"

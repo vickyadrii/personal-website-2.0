@@ -37,7 +37,7 @@ const SocialMedia: React.FC = () => {
             src={logo}
             alt="logo"
             decoding="async"
-            loading="eager"
+            loading="lazy"
             whileHover={{ scale: 1.13, rotate: 10 }}
             whileTap={{ scale: 0.8, rotate: -90, borderRadius: "100%" }}
 

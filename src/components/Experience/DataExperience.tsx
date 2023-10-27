@@ -75,7 +75,7 @@ const DataExperience: React.FC = () => {
             <img
               src={pattern}
               decoding="async"
-              loading="eager"
+              loading="lazy"
               alt="pattern vickyadrii"
               className="xl:absolute hidden h-full w-80"
             />
@@ -85,7 +85,7 @@ const DataExperience: React.FC = () => {
                   <img
                     src={logo_url}
                     decoding="async"
-                    loading="eager"
+                    loading="lazy"
                     alt="company logo"
                     className={`mt-1 ${id === 0 || id === 1 ? "md:w-auto w-28" : "md:w-auto w-10"}`}
                   />

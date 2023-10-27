@@ -53,7 +53,7 @@ const AboutContent: React.FC = () => {
         <img
           src={aboutShape}
           decoding="async"
-          loading="eager"
+          loading="lazy"
           alt="about shape vickyadrii"
           className="absolute -z-10 bottom-2 xl:w-auto md:w-56 w-48"
         />
