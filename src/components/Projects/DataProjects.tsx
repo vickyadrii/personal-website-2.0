@@ -63,15 +63,15 @@ const DataProjects: React.FC = () => {
             variants={item}
             src={img_url}
             // decoding="async"
-            loading="eager"
+            loading="lazy"
             alt="projects vickyadrii"
           />
           <div className="flex flex-col gap-2.5 items-start">
             <img
               src={logo}
               alt="logo project vickyadrii"
-              // decoding="async"
-              loading="eager"
+              decoding="async"
+              loading="lazy"
               className={`object-cover ${id === 0 ? "md:w-48 w-28" : "md:w-24 w-2/12"}`}
             />
             <div className="flex items-center gap-1">
@@ -81,8 +81,8 @@ const DataProjects: React.FC = () => {
                   <img
                     key={index}
                     src={data}
-                    // decoding="async"
-                    loading="eager"
+                    decoding="async"
+                    loading="lazy"
                     alt="tech stack logo vickyadrii"
                     className="md:w-[26px] w-5 object-contain aspect-[4/3]"
                   />
