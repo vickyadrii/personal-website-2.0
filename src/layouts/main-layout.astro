@@ -54,8 +54,8 @@ import { SEO } from "astro-seo";
     <img src={ellipse} alt="ellipse vickyadrii" class="absolute top-0" decoding="async" loading="lazy" />
     <main class="max-w-7xl mx-auto font-figtree text-primary-black">
       <div class="m-5">
-        <Navbar client:load />
-        <ArrowTop client:load />
+        <Navbar client:visible />
+        <ArrowTop client:visible />
         <slot />
       </div>
     </main>
