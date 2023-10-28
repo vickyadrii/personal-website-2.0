@@ -10,11 +10,12 @@ const AboutImage: React.FC = () => {
   const aboutContentControls = useAnimation();
 
   const aboutContentVariants = {
-    hidden: { opacity: 0, x: 50, y: 12 },
+    hidden: { opacity: 0, x: -25, y: 25 },
     visible: {
       opacity: 1,
       x: 0,
       y: 0,
+
       transition: {
         delay: 0.5,
         type: "spring",
