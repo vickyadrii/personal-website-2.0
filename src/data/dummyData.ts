@@ -116,7 +116,7 @@ export const dataProjectss: Projects[] = [
     logo: logoimpactPalu,
     type: "Company Profile •",
     tech_stack_logo: [react, nextjsDark, tailwind],
-    navigate_url: "https://impactpalu-fe.vercel.app",
+    navigate_url: "https://impactpalu.id",
   },
   {
     id: 3,
