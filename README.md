@@ -2,7 +2,8 @@
 
 I'm so happy to build this website 🤩
 
-![Tech Stack](https://github-readme-tech-stack.vercel.app/api/cards?lineCount=1&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=typescript%2Ctypescript%2C0b94f4%3Breact%2Creact%2C006b7e%3Bastro%2Castro%2Cd44700%3Btailwind%2Ctailwind%2C691818%3B)
+## Tech Stack
+<img src="https://img.shields.io/badge/astro-%23ff5d01.svg?logo=astro&logoColor=white&style=for-the-badge" alt="Astro" /> <img src="https://img.shields.io/badge/typescript-%23007acc.svg?logo=typescript&logoColor=white&style=for-the-badge" alt="TypeScript" /> <img src="https://img.shields.io/badge/react-%2320232a.svg?logo=react&logoColor=%2361dafb&style=for-the-badge" alt="React" /> <img src="https://img.shields.io/badge/tailwindcss-%2338b2ac.svg?logo=tailwind-css&logoColor=white&style=for-the-badge" alt="TailwindCSS" />
 
 ## About This Website
 - Built with Astro 🚀
