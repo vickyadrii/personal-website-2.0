@@ -61,9 +61,7 @@ const AboutContent: React.FC = () => {
         <BurstBload />
       </motion.div>
       <motion.p variants={item} className="xl:text-2xl md:text-base text-sm xl:leading-9 text-medium">
-        Hello, I’m Vicky! I’m dedicated to continuously expanding my knowledge and skills in{" "}
-        <span className="font-bold">front-end development</span> and learning new technologies. I'm able to develop web
-        applications, consume APIs and strive to deliver high-quality code.
+        Hello, I’m Vicky! Passionate in frontend developer and committed to continuously expanding my knowledge and skills in frontend development, deliver clean code and learning new technology. 
       </motion.p>
     </motion.div>
   );

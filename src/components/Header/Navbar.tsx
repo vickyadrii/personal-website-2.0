@@ -7,6 +7,7 @@ import hamburgerIcon from "../../assets/icons/hamburger.svg";
 import closeIcon from "../../assets/icons/close.svg";
 
 const Navbar: React.FC = () => {
+  const [activeNav, setActiveNav] = useState<string>("");
   const [isNavbarResponsive, setIsNavbarResponsive] = useState<boolean>(false);
 
   const handleResponsive: any = () => {
@@ -40,8 +41,14 @@ const Navbar: React.FC = () => {
               offset={offset}
               key={id}
               duration={500}
+              spy={true}
               smooth={true}
-              className="text-primary opacity-40 hover:opacity-80 font-semibold cursor-pointer"
+              className={`${
+                activeNav === navigate_url
+                  ? "text-[#2c848f] font-semibold"
+                  : "text-primary/50 font-medium"
+              } cursor-pointer hover:text-[#2d6e77]`}
+              onSetActive={() => setActiveNav(navigate_url)}
             >
               {navigate}
             </Link>
@@ -65,13 +72,18 @@ const Navbar: React.FC = () => {
         <div className="w-full h-screen flex flex-col justify-center items-center gap-10 lg:text-base text-sm">
           {dataNavbar.map(({ id, navigate, navigate_url, offset }) => (
             <Link
-              onClick={() => setIsNavbarResponsive(false)}
               to={navigate_url}
               offset={offset}
               key={id}
               duration={500}
+              spy={true}
               smooth={true}
-              className="text-sky-800 opacity-60 hover:opacity-90 font-semibold cursor-pointer"
+              className={`${
+                activeNav === navigate_url
+                  ? "text-primary/90 font-semibold"
+                  : "hover:text-primary text-primary/50 cursor-pointer font-medium"
+              }`}
+              onSetActive={() => setActiveNav(navigate_url)}
             >
               {navigate}
             </Link>
