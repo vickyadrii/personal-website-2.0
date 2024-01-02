@@ -83,6 +83,7 @@ const Navbar: React.FC = () => {
                   ? "text-primary/90 font-semibold"
                   : "hover:text-primary text-primary/50 cursor-pointer font-medium"
               }`}
+              onClick={handleResponsive}
               onSetActive={() => setActiveNav(navigate_url)}
             >
               {navigate}
