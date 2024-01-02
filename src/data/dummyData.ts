@@ -8,20 +8,15 @@ import email from "../assets/icons/social-media/email.webp";
 // Import assets projects and skills
 import villageWeb from "../assets/images/village-web.png";
 import hmtiUntad from "../assets/images/hmti-untad.png";
-import badonorDarah from "../assets/images/badonordarah.png";
 import hrev from "../assets/images/hrev.png";
-import impactPalu from "../assets/images/impact-palu.png";
 import snResidence from "../assets/images/sn-residence.png";
 
 import logoVillageWebsite from "../assets/icons/logo-village-website.png";
 import logoHmtiUntad from "../assets/icons/logo-hmti-untad.png";
-import logoBadonorDarah from "../assets/icons/logo-badonordarah.png";
 import logoHrev from "../assets/icons/logo-hrev.png";
-import logoimpactPalu from "../assets/icons/logo-impact-palu.png";
 import logoSnResidence from "../assets/icons/logo-sn-residence.png";
 
 import nextjs from "../assets/icons/tech-stack/nextjs.svg";
-import nextjsDark from "../assets/icons/tech-stack/nextjs-dark.svg";
 import react from "../assets/icons/tech-stack/react.svg";
 import typescript from "../assets/icons/tech-stack/typescript.svg";
 import javascript from "../assets/icons/tech-stack/javascript.svg";
@@ -34,7 +29,6 @@ import mongodb from "../assets/icons/tech-stack/mongodb.svg";
 import postgresql from "../assets/icons/tech-stack/postgresql.svg";
 import firebase from "../assets/icons/tech-stack/firebase.svg";
 import vite from "../assets/icons/tech-stack/vite.svg";
-import express from "../assets/icons/tech-stack/express.svg";
 
 // import assets experience
 import eduqat from "../assets/icons/company-logo/eduqat.svg";
@@ -108,14 +102,6 @@ export const dataProjectss: Projects[] = [
   },
   {
     id: 1,
-    img_url: badonorDarah,
-    logo: logoBadonorDarah,
-    type: "Medical App •",
-    tech_stack_logo: [react, vite, tailwind, express],
-    navigate_url: "/",
-  },
-  {
-    id: 2,
     img_url: hrev,
     logo: logoHrev,
     type: "Company Profile •",
@@ -123,7 +109,7 @@ export const dataProjectss: Projects[] = [
     navigate_url: "https://halohrev.com",
   },
   {
-    id: 3,
+    id: 2,
     img_url: hmtiUntad,
     logo: logoHmtiUntad,
     type: "Landing Page •",
@@ -131,15 +117,7 @@ export const dataProjectss: Projects[] = [
     navigate_url: "https://hmtiuntad.vercel.app/",
   },
   {
-    id: 4,
-    img_url: impactPalu,
-    logo: logoimpactPalu,
-    type: "Company Profile •",
-    tech_stack_logo: [react, nextjsDark, tailwind],
-    navigate_url: "https://impactpalu.id",
-  },
-  {
-    id: 5,
+    id: 3,
     img_url: snResidence,
     logo: logoSnResidence,
     type: "Web App •",

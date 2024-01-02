@@ -72,7 +72,7 @@ const DataProjects: React.FC = () => {
               alt="logo project vickyadrii"
               decoding="async"
               loading="lazy"
-              className={`object-cover ${id === 1 || id === 0 ? "md:w-32 w-28" : id === 3 ? "w-8" : "md:w-14 w-2/12"}`}
+              className={`object-cover ${id === 0 ? "md:w-32 w-28" : id === 2 ? "w-8" : "md:w-14 w-2/12"}`}
             />
             <div className="flex items-center gap-1">
               <p className="md:text-base text-xs">{type}</p>
