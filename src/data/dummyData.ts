@@ -6,11 +6,15 @@ import github from "../assets/icons/social-media/github.webp";
 import email from "../assets/icons/social-media/email.webp";
 
 // Import assets projects and skills
+import villageWeb from "../assets/images/village-web.png";
+import hmtiUntad from "../assets/images/hmti-untad.png";
 import badonorDarah from "../assets/images/badonordarah.png";
 import hrev from "../assets/images/hrev.png";
 import impactPalu from "../assets/images/impact-palu.png";
 import snResidence from "../assets/images/sn-residence.png";
 
+import logoVillageWebsite from "../assets/icons/logo-village-website.png";
+import logoHmtiUntad from "../assets/icons/logo-hmti-untad.png";
 import logoBadonorDarah from "../assets/icons/logo-badonordarah.png";
 import logoHrev from "../assets/icons/logo-hrev.png";
 import logoimpactPalu from "../assets/icons/logo-impact-palu.png";
@@ -96,22 +100,38 @@ export const dataLogoSocialMedia: LogoSocialMedia[] = [
 export const dataProjectss: Projects[] = [
   {
     id: 0,
+    img_url: villageWeb,
+    logo: logoVillageWebsite,
+    type: "App Platform •",
+    tech_stack_logo: [react, vite, tailwind],
+    navigate_url: "https://desa.kembalikedesa.id/?code=720701",
+  },
+  {
+    id: 1,
     img_url: badonorDarah,
     logo: logoBadonorDarah,
-    type: "Medical Apps •",
+    type: "Medical App •",
     tech_stack_logo: [react, vite, tailwind, express],
     navigate_url: "/",
   },
   {
-    id: 1,
+    id: 2,
     img_url: hrev,
     logo: logoHrev,
-    type: "Landing Page •",
+    type: "Company Profile •",
     tech_stack_logo: [react, typescript, vite, tailwind],
     navigate_url: "https://halohrev.com",
   },
   {
-    id: 2,
+    id: 3,
+    img_url: hmtiUntad,
+    logo: logoHmtiUntad,
+    type: "Landing Page •",
+    tech_stack_logo: [react, vite, tailwind],
+    navigate_url: "https://hmtiuntad.vercel.app/",
+  },
+  {
+    id: 4,
     img_url: impactPalu,
     logo: logoimpactPalu,
     type: "Company Profile •",
@@ -119,10 +139,10 @@ export const dataProjectss: Projects[] = [
     navigate_url: "https://impactpalu.id",
   },
   {
-    id: 3,
+    id: 5,
     img_url: snResidence,
     logo: logoSnResidence,
-    type: "Company Profile •",
+    type: "Web App •",
     tech_stack_logo: [react, tailwind],
     navigate_url: "https://sn-residence-dev.vercel.app",
   },
@@ -155,6 +175,7 @@ export const dataExperience: Experience[] = [
     responsibilites: [
       "Develop an assignments feature for educators and students that allows educators to create assignment materials, publish scores, view student attachments and provide feedback to their students. On the other hand, students can upload attachments and await feedback from their educators.",
       "Develop a drip course feature that enables educators to manage access to materials for their students. When the drip course is enabled, students can access materials after enrolling or upon completing the previous material.",
+      "Develop a face recognition feature to verify students before accessing the material and integrate it with Prakerja.",
       "Collaborate with the UI/UX designer team to develop the web into code and work with backend engineer to integrate the functionality and consume APIs.",
       "Participate with the application testing team (Quality Assurance) to ensure that the platform meets the company’s standards for performance and reliability.",
       "Implement clean code, testable code, project flexibility and agile methodologies.",
@@ -173,7 +194,7 @@ export const dataExperience: Experience[] = [
     name: "PT Hadji Kalla",
     description: "@kallagroup",
     date: "Aug 2022 - Dec 2022",
-    position: "Web Developer Intern",
+    position: "Web Developer",
     responsibilites: [
       "Develop a WhatsApp gateway that enables the company to broadcast messages to customers using Next.js, Tailwind, and Baileys.",
       "Collaborate with backend developers to integrate the functionality and consume APIs.",
@@ -192,7 +213,7 @@ export const dataExperience: Experience[] = [
     name: "Kodingna",
     description: "@Halokodingna",
     date: "Jun 2022 - Sep 2022",
-    position: "Frontend Web Developer Intern",
+    position: "Frontend Web Developer",
     responsibilites: [
       "Collaborate with the team to understand project requirements and design specifications for the landing page.",
       "Write clean and maintainable code following best practices and coding standards.",
