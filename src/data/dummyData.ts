@@ -6,10 +6,10 @@ import github from "../assets/icons/social-media/github.webp";
 import email from "../assets/icons/social-media/email.webp";
 
 // Import assets projects and skills
-import villageWeb from "../assets/images/village-web.png";
-import hmtiUntad from "../assets/images/hmti-untad.png";
-import hrev from "../assets/images/hrev.png";
-import snResidence from "../assets/images/sn-residence.png";
+import villageWeb from "../assets/images/village-web.webp";
+import hmtiUntad from "../assets/images/hmti-untad.webp";
+import hrev from "../assets/images/hrev.webp";
+import snResidence from "../assets/images/sn-residence.webp";
 
 import logoVillageWebsite from "../assets/icons/logo-village-website.png";
 import logoHmtiUntad from "../assets/icons/logo-hmti-untad.png";
@@ -113,7 +113,7 @@ export const dataProjectss: Projects[] = [
     img_url: hmtiUntad,
     logo: logoHmtiUntad,
     type: "Landing Page •",
-    tech_stack_logo: [react, vite, tailwind],
+    tech_stack_logo: [react, typescript, vite, tailwind],
     navigate_url: "https://hmtiuntad.vercel.app/",
   },
   {
