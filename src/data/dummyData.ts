@@ -153,7 +153,6 @@ export const dataExperience: Experience[] = [
     responsibilites: [
       "Develop an assignments feature for educators and students that allows educators to create assignment materials, publish scores, view student attachments and provide feedback to their students. On the other hand, students can upload attachments and await feedback from their educators.",
       "Develop a drip course feature that enables educators to manage access to materials for their students. When the drip course is enabled, students can access materials after enrolling or upon completing the previous material.",
-      "Develop a face recognition feature to verify students before accessing the material and integrate it with Prakerja.",
       "Collaborate with the UI/UX designer team to develop the web into code and work with backend engineer to integrate the functionality and consume APIs.",
       "Participate with the application testing team (Quality Assurance) to ensure that the platform meets the company’s standards for performance and reliability.",
       "Implement clean code, testable code, project flexibility and agile methodologies.",
