@@ -60,8 +60,8 @@ const HomeContent = () => {
         variants={descriptionHomeVariants}
         className="md:text-[24px] max-w-3xl text-center text-slate-500 md:leading-10 leading-6"
       >
-        <span className="font-semibold">2+ years of experience in front-end development,</span> using React.js for
-        developing a website and web applications.
+        <span className="font-semibold">Frontend Engineer</span> with 2+ years of experience in React.js for developing
+        a website and web applications. Currently, I'm focusing on enhancing my skills in Golang 😎
       </motion.p>
     </>
   );
