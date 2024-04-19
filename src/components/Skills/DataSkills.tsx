@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { dataSkills } from "../../data/dummyData";
+import { dataSkills } from "../../constants";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 const DataSkills = () => {

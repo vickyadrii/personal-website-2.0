@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { dataNavbar } from "../../data/dummyData";
+import { dataNavbar } from "../../constants";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-import { dataProjectss } from "../../data/dummyData";
+import { dataProjectss } from "../../constants";
 
 const DataProjects: React.FC = () => {
   const ref = useRef(null);

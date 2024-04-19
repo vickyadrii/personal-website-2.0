@@ -1,4 +1,4 @@
-import { dataLogoSocialMedia } from "../../data/dummyData";
+import { dataLogoSocialMedia } from "../../constants";
 import { motion } from "framer-motion";
 
 const SocialMedia: React.FC = () => {

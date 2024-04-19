@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
-import { dataExperience } from "../../data/dummyData";
+import { dataExperience } from "../../constants";
 
 const DataExperience: React.FC = () => {
   const ref = useRef(null);
