@@ -2,7 +2,7 @@ import SocialMedia from "./social-media";
 
 const HeroSection = () => {
   return (
-    <div className="space-y-4 md:my-28 my-14">
+    <section className="space-y-4 md:my-32 my-14">
       <h2 className="md:text-[32px] text-2xl text-primary-blue-500 font-caveat font-light">Hi, I&apos;m Vicky!</h2>
       <h1 className="bg-gradient-to-r from-primary-dark-400 to-white bg-clip-text md:text-5xl text-3xl text-transparent md:h-14 inline-block font-bold">
         Lorem Ipsum
@@ -13,7 +13,7 @@ const HeroSection = () => {
         placeat.
       </p>
       <SocialMedia />
-    </div>
+    </section>
   );
 };
 

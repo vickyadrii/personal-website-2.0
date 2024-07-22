@@ -1,1 +1,1 @@
-export const getAssetUrl = (url: string) => `/assets/${url}`;
+export const getAssetUrl = (url: string) => `/assets${url}`;

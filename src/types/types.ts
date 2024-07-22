@@ -7,3 +7,13 @@ export type SocialMedia = {
   icon: string;
   href: string;
 };
+
+export type WorkExperience = {
+  id: number;
+  logo: string;
+  company_name: string;
+  title: string;
+  period: string;
+  tech_stacks: string[];
+  responsibilities: string[];
+};
