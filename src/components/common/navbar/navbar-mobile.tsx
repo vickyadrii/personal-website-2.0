@@ -14,7 +14,7 @@ const NavbarMobile = () => {
   };
 
   return (
-    <header className="relative">
+    <header className="md:hidden relative">
       <div className="absolute right-0 -top-3 px-5 z-50">
         <button onClick={handleShowMenu} className="p-1 border-2 rounded-md">
           <Image
