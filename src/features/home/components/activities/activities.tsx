@@ -29,7 +29,7 @@ const Activities = () => {
               {tech_stacks.map((item, index) => (
                 <li
                   key={index}
-                  className="md:text-xs text-[10px] px-3 py-1 bg-primary-dark-700 border border-primary-dark-600 rounded-full"
+                  className="md:text-xs text-[11px] px-3 py-1 bg-primary-dark-700 border border-primary-dark-600 rounded-full"
                 >
                   {item}
                 </li>
