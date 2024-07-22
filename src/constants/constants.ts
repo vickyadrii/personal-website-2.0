@@ -1,4 +1,4 @@
-import { NavbarItem, SocialMedia, WorkExperience } from "@/types/types";
+import { NavbarItem, SocialMedia, Activities } from "@/types/types";
 
 export const navbarItems: NavbarItem[] = [
   {
@@ -42,7 +42,7 @@ export const socialMedia: SocialMedia[] = [
   },
 ];
 
-export const workExperience: WorkExperience[] = [
+export const workExperience: Activities[] = [
   {
     id: 0,
     logo: "/icons/ic_eduqat.svg",
@@ -61,7 +61,7 @@ export const workExperience: WorkExperience[] = [
     id: 1,
     logo: "/icons/ic_kalla.svg",
     company_name: "Kalla Group",
-    title: "Web Developer Intern",
+    title: "Web Developer",
     period: "Aug 2022 - Dec 2022",
     tech_stacks: ["JavaScript", "React", "NextJS", "NodeJS", "ExpressJS", "MySQL", "Tailwind"],
     responsibilities: [
@@ -74,12 +74,47 @@ export const workExperience: WorkExperience[] = [
     id: 2,
     logo: "/icons/ic_kodingna.png",
     company_name: "Kodingna",
-    title: "Frontend Web Developer Intern",
+    title: "Frontend Web Developer",
     period: "Aug 2022 - Dec 2022",
     tech_stacks: ["JavaScript", "React", "Tailwind", "Figma", "Agile Methodology"],
     responsibilities: [
       "Designed and Developed a company profile website.",
       "Wrote clean and maintainable code following best practices and coding standards.",
     ],
+  },
+];
+
+export const activities: Activities[] = [
+  {
+    id: 0,
+    logo: "/icons/ic_bearmentor.png",
+    company_name: "Bearmentor",
+    title: "Frontend Mentor",
+    period: "Jun 2024 - Present",
+    tech_stacks: ["HTML5", "CSS3", "Git", "Figma", "Tailwind"],
+  },
+  {
+    id: 1,
+    logo: "/icons/ic_hammercode.svg",
+    company_name: "HammerCode",
+    title: "Frontend Mentor",
+    period: "May 2023 - Present",
+    tech_stacks: ["JavaScript", "TypeScript", "React", "NextJS", "HTML5", "CSS3", "Tailwind", "Git"],
+  },
+  {
+    id: 2,
+    logo: "/icons/ic_bangkit.png",
+    company_name: "Bangkit Academy",
+    title: "Cloud Computing Path",
+    period: "Feb 2022 - Jul 2022",
+    tech_stacks: ["Google Cloud Platform", "Web Development", "Soft-skills", "English Class"],
+  },
+  {
+    id: 3,
+    logo: "/icons/ic_programming-tadulako.png",
+    company_name: "Programming Tadulako",
+    title: "Web Development Mentor",
+    period: "Nov 2021 - Nov 2021",
+    tech_stacks: ["JavaScript", "React", "HTML5", "CSS3", "Git"],
   },
 ];

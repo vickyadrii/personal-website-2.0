@@ -27,7 +27,7 @@ const NavbarMobile = () => {
       </div>
 
       <div
-        className={`fixed w-100 ${showMenu ? "opacity-100" : "opacity-0"} top-0 w-full bg-black/50 min-h-screen backdrop-blur-[2px] transition-all duration-[400ms] ease-out`}
+        className={`fixed w-100 ${showMenu ? "opacity-100" : "opacity-0 -right-full"} top-0 w-full bg-black/50 min-h-screen backdrop-blur-[2px] transition-all duration-[400ms] ease-out`}
       >
         <div
           className={`fixed ${showMenu ? "right-0 ease-out" : "-right-full ease-in"} w-full flex justify-end drop-shadow-2xl transition-all duration-[400ms]`}

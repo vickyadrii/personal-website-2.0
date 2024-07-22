@@ -8,12 +8,12 @@ export type SocialMedia = {
   href: string;
 };
 
-export type WorkExperience = {
+export type Activities = {
   id: number;
   logo: string;
   company_name: string;
   title: string;
   period: string;
   tech_stacks: string[];
-  responsibilities: string[];
+  responsibilities?: string[];
 };
