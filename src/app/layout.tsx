@@ -19,11 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={sora.className}>
-        {/* Dekstop and Tablet Nav */}
-        <Navbar />
-
         {/* Mobile Nav */}
         <NavbarMobile />
+
+        {/* Dekstop and Tablet Nav */}
+        <Navbar />
 
         <main className="max-w-5xl mx-auto p-5 lg:pt-0 pt-[50px]">{children}</main>
       </body>
