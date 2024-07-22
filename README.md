@@ -2,7 +2,7 @@
 
 ## Technologies used:
 
-[![My Skills](https://skillicons.dev/icons?i=astro,react,ts,tailwind)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=nextjs,react,ts,tailwind)](https://skillicons.dev)
 
 ## Getting Started
 
@@ -49,7 +49,7 @@ Start the Express server:
 
 ## Built With
 
-- [Astro](https://astro.build/) - Web framework for building content-driven websites
+- [NextJS](https://nextjs.org/) - The react framework for the web
 - [React](https://react.dev/) - React library for building user interface
 - [TypeScript](https://www.typescriptlang.org/) - Programming language
 - [Tailwind](https://tailwindcss.com/) - Utility-first CSS framework
