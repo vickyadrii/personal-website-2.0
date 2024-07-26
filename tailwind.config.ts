@@ -16,6 +16,7 @@ const config: Config = {
           600: "#4D4D4D",
           700: "#1E1E1F",
           800: "#202020",
+          900: "#161616",
         },
         "primary-blue": {
           500: "#8DDBE0",

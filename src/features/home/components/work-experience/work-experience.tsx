@@ -1,4 +1,5 @@
 import TitleSection from "@/components/common/title-section/title-section";
+import Badge from "@/components/ui/badge/badge";
 import { workExperience } from "@/constants/constants";
 import { getAssetUrl } from "@/lib/utils";
 import Image from "next/image";
@@ -25,16 +26,11 @@ const WorkExperience = () => {
               <p className="md:text-base text-xs text-primary-dark-500">{period}</p>
             </div>
 
-            <ul className="flex items-center gap-2 flex-wrap">
+            <div className="flex items-center gap-2 flex-wrap">
               {tech_stacks.map((item, index) => (
-                <li
-                  key={index}
-                  className="md:text-xs text-[11px] px-3 py-1 bg-primary-dark-700 border border-primary-dark-600 rounded-full"
-                >
-                  {item}
-                </li>
+                <Badge key={index}>{item}</Badge>
               ))}
-            </ul>
+            </div>
 
             <div className="space-y-2">
               <h3 className="font-semibold text-primary-dark-500">The responsibilites include:</h3>

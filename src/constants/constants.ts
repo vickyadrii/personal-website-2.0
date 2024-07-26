@@ -1,4 +1,4 @@
-import { NavbarItem, SocialMedia, Activities } from "@/types/types";
+import { NavbarItem, SocialMedia, Activity, Project } from "@/types/types";
 
 export const navbarItems: NavbarItem[] = [
   {
@@ -42,7 +42,7 @@ export const socialMedia: SocialMedia[] = [
   },
 ];
 
-export const workExperience: Activities[] = [
+export const workExperience: Activity[] = [
   {
     id: 0,
     logo: "/icons/ic_eduqat.svg",
@@ -84,7 +84,7 @@ export const workExperience: Activities[] = [
   },
 ];
 
-export const activities: Activities[] = [
+export const activities: Activity[] = [
   {
     id: 0,
     logo: "/icons/ic_bearmentor.png",
@@ -116,5 +116,40 @@ export const activities: Activities[] = [
     title: "Web Development Mentor",
     period: "Nov 2021 - Nov 2021",
     tech_stacks: ["JavaScript", "React", "HTML5", "CSS3", "Git"],
+  },
+];
+
+export const projects: Project[] = [
+  {
+    id: 0,
+    thumbnail: "/images/village-web.png",
+    name: "Website Desa",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur. Phasellus eros ante vitae et. Tortor in sed ut ipsum proin amet nisl dictum. Sit auctor sem eget lorem lectus amet nunc.",
+    tech_stacks: ["React", "Tailwind", "Ant Design", "Context"],
+  },
+  {
+    id: 1,
+    thumbnail: "/images/village-web.png",
+    name: "Website Desa",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur. Phasellus eros ante vitae et. Tortor in sed ut ipsum proin amet nisl dictum. Sit auctor sem eget lorem lectus amet nunc.",
+    tech_stacks: ["React", "Vite", "Tailwind"],
+  },
+  {
+    id: 2,
+    thumbnail: "/images/village-web.png",
+    name: "Website Desa",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur. Phasellus eros ante vitae et. Tortor in sed ut ipsum proin amet nisl dictum. Sit auctor sem eget lorem lectus amet nunc.",
+    tech_stacks: ["React", "Vite", "Tailwind"],
+  },
+  {
+    id: 3,
+    thumbnail: "/images/village-web.png",
+    name: "Website Desa",
+    summary:
+      "Lorem ipsum dolor sit amet consectetur. Phasellus eros ante vitae et. Tortor in sed ut ipsum proin amet nisl dictum. Sit auctor sem eget lorem lectus amet nunc.",
+    tech_stacks: ["React", "Vite", "Tailwind"],
   },
 ];

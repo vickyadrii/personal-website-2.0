@@ -8,7 +8,7 @@ export type SocialMedia = {
   href: string;
 };
 
-export type Activities = {
+export type Activity = {
   id: number;
   logo: string;
   company_name: string;
@@ -16,4 +16,12 @@ export type Activities = {
   period: string;
   tech_stacks: string[];
   responsibilities?: string[];
+};
+
+export type Project = {
+  thumbnail: string;
+  id: number;
+  name: string;
+  summary: string;
+  tech_stacks: string[];
 };
