@@ -45,3 +45,7 @@ input::placeholder,
 textarea::placeholder {
   color: #ffffff;
 }
+
+.\!bg-clip-text {
+  background-clip: text !important;
+}
