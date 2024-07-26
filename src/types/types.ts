@@ -25,3 +25,9 @@ export type Project = {
   summary: string;
   tech_stacks: string[];
 };
+
+export type EmailMessage = {
+  name: string;
+  email: string;
+  message: string;
+};

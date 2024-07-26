@@ -1,10 +1,42 @@
-import ButtonIcon from "@/components/ui/button-icon/button-icon";
+"use client";
+
 import { getAssetUrl } from "@/lib/utils";
-import React from "react";
+
+import ButtonIcon from "@/components/ui/button-icon/button-icon";
+import { useState } from "react";
+import { EmailMessage } from "@/types/types";
 
 const ContactsForm = () => {
+  const [emailMessage, setEmailMessage] = useState<EmailMessage>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleOnChange = (name: string, value: string) => {
+    setEmailMessage((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleOnSubmit = async (event: React.SyntheticEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    try {
+      const res = await fetch("http://localhost:3000/api/send", {
+        method: "POST",
+        body: JSON.stringify(emailMessage),
+      });
+      const resData = res.json();
+      console.log(resData);
+    } catch (error) {
+      console.log(error);
+    }
+    console.log(emailMessage);
+  };
   return (
-    <form autoComplete="off" className="space-y-6">
+    <form onSubmit={handleOnSubmit} autoComplete="off" className="space-y-6">
       <div className="md:space-y-14 space-y-4">
         <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-4">
           <div className="flex flex-col gap-2">
@@ -14,28 +46,34 @@ const ContactsForm = () => {
             <input
               type="text"
               id="name"
+              autoComplete="off"
+              onChange={(event) => handleOnChange(event.target.id, event.target.value)}
               className="bg-transparent border-b-2 border-b-primary-dark-600 outline-none pb-2 md:text-base text-sm focus:border-b-primary-dark-500 transition-all duration-150 ease-in"
             />
           </div>
 
           <div className="flex flex-col gap-2">
-            <label htmlFor="name" className="md:text-xl text-base">
+            <label htmlFor="email" className="md:text-xl text-base">
               Email
             </label>
             <input
-              type="text"
-              id="name"
+              type="email"
+              id="email"
+              autoComplete="off"
+              onChange={(event) => handleOnChange(event.target.id, event.target.value)}
               className="bg-transparent border-b-2 border-b-primary-dark-600 outline-none pb-2 md:text-base text-sm focus:border-b-primary-dark-500 transition-all duration-150 ease-in"
             />
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="name" className="md:text-xl text-base">
+          <label htmlFor="message" className="md:text-xl text-base">
             Your Message
           </label>
           <textarea
-            id="name"
+            id="message"
+            autoComplete="off"
+            onChange={(event) => handleOnChange(event.target.id, event.target.value)}
             className="bg-transparent border-b-2 border-b-primary-dark-600 outline-none pb-2 md:text-base text-sm focus:border-b-primary-dark-500 transition-all duration-150 ease-in resize-none"
             rows={4}
           />
