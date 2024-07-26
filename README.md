@@ -34,7 +34,7 @@ Make sure you have installed the following prerequisites before proceeding:
 
 ## Usage
 
-Start the Express server:
+Start the NextJS server:
 
 ```bash
    npm run dev
