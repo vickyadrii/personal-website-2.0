@@ -46,6 +46,10 @@ textarea::placeholder {
   color: #ffffff;
 }
 
-.\!bg-clip-text {
-  background-clip: text !important;
+.gradient-text {
+  background: linear-gradient(to right, #9c9595, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
