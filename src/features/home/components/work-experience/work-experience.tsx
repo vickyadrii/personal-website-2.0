@@ -6,7 +6,7 @@ import Image from "next/image";
 const WorkExperience = () => {
   return (
     <section id="experiences" className="space-y-8 pt-8 border-y border-y-primary-dark-600">
-      <TitleSection title="Work Experience" description="Here are my work experience and career highlights" />
+      <TitleSection title="Work Experience" description="Here are my work experience and career highlights:" />
 
       <div className="space-y-8">
         {workExperience.map(({ id, logo, company_name, title, period, tech_stacks, responsibilities }, index) => (

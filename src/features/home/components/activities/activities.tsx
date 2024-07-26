@@ -6,7 +6,7 @@ import Image from "next/image";
 const Activities = () => {
   return (
     <section id="activities" className="space-y-8 pt-8 border-b border-b-primary-dark-600">
-      <TitleSection title="Activities" description="I love teaching! So, here are my activities and being a mentor" />
+      <TitleSection title="Activities" description="I love teaching! So, here are my activities and being a mentor:" />
 
       <div className="space-y-8">
         {activities.map(({ id, logo, company_name, title, period, tech_stacks }, index) => (
