@@ -1,4 +1,4 @@
-import SocialMedia from "./social-media";
+import SocialMedia from "@/components/common/social-media/social-media";
 
 const HeroSection = () => {
   return (
