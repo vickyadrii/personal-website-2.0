@@ -31,3 +31,17 @@ body {
     text-wrap: balance;
   }
 }
+
+:-webkit-autofill,
+:-webkit-autofill:hover,
+:-webkit-autofill:focus {
+  -webkit-box-shadow:
+    0 0 0px 1000px rgba(0, 0, 0, 0.5) inset,
+    0 0 0px 1000px #000000 inset;
+  -webkit-text-fill-color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffffff;
+}
