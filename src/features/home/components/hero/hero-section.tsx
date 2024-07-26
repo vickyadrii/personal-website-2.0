@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section className="space-y-4 md:my-32 my-14">
       <h2 className="md:text-[32px] text-2xl text-primary-blue-500 font-caveat font-light">Hi, I&apos;m Vicky!</h2>
-      <h1 className="!text-transparent bg-clip-text bg-gradient-to-r from-gray-400 to-white md:text-5xl text-3xl font-bold">
+      <h1 className="mx-2 text-transparent bg-clip-text bg-gradient-to-r from-[#1487B9] to-[#1FC2F0] xl:text-[82px] md:text-[70px] text-[32px] font-bold">
         Frontend Engineer
       </h1>
       <p className="text-primary-dark-500 md:text-base text-sm md:leading-8 leading-6">
