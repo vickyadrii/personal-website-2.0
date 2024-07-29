@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import Footer from "@/components/common/footer/footer";
 import ScrollToTop from "@/components/common/scroll-to-top/ScrollToTop";
 
-import Contacts from "./contacts/contacts";
+import Contact from "./contact/contact";
 import Projects from "./components/projects/projects";
 import HeroSection from "./components/hero/hero-section";
 import Activities from "./components/activities/activities";
@@ -16,7 +16,7 @@ const Home = () => {
       <WorkExperience />
       <Activities />
       <Projects />
-      <Contacts />
+      <Contact />
       <Footer />
 
       <ScrollToTop />

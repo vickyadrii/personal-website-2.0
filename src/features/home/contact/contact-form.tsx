@@ -6,7 +6,7 @@ import ButtonIcon from "@/components/ui/button-icon/button-icon";
 import { useState } from "react";
 import { EmailMessage } from "@/types/types";
 
-const ContactsForm = () => {
+const ContactForm = () => {
   const [emailMessage, setEmailMessage] = useState<EmailMessage>({
     name: "",
     email: "",
@@ -85,4 +85,4 @@ const ContactsForm = () => {
   );
 };
 
-export default ContactsForm;
+export default ContactForm;
