@@ -9,6 +9,9 @@ const sora = Sora({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Hello, I'm Vicky 👋",
   description: "Frontend Engineer",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
