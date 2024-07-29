@@ -37,8 +37,8 @@ export const socialMedia: SocialMedia[] = [
     href: "https://medium.com/@vickyadri29",
   },
   {
-    icon: "/icons/ic_telegram.svg",
-    href: "http://t.me/vickyadrii",
+    icon: "/icons/ic_x.svg",
+    href: "https://x.com/viiiikk_",
   },
 ];
 
