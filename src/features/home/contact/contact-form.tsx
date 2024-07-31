@@ -24,7 +24,7 @@ const ContactForm = () => {
     event.preventDefault();
 
     try {
-      const res = await fetch("http://localhost:3000/api/send", {
+      const res = await fetch("https://www.vickyadrii.my.id/api/send", {
         method: "POST",
         body: JSON.stringify(emailMessage),
       });
