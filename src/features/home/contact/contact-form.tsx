@@ -7,6 +7,7 @@ import { useState } from "react";
 import { EmailMessage } from "@/types/types";
 
 const ContactForm = () => {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [emailMessage, setEmailMessage] = useState<EmailMessage>({
     name: "",
     email: "",
@@ -23,6 +24,8 @@ const ContactForm = () => {
   const handleOnSubmit = async (event: React.SyntheticEvent<HTMLFormElement>) => {
     event.preventDefault();
 
+    setIsLoading(true);
+
     try {
       const res = await fetch("https://www.vickyadrii.my.id/api/send", {
         method: "POST",
@@ -32,8 +35,9 @@ const ContactForm = () => {
       console.log(resData);
     } catch (error) {
       console.log(error);
+    } finally {
+      setIsLoading(false);
     }
-    console.log(emailMessage);
   };
   return (
     <form onSubmit={handleOnSubmit} autoComplete="off" className="space-y-6">
@@ -80,7 +84,9 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <ButtonIcon icon={getAssetUrl("/icons/ic_telegram.svg")}>Send Message</ButtonIcon>
+      <ButtonIcon disabled={isLoading} icon={getAssetUrl("/icons/ic_telegram.svg")}>
+        {isLoading ? "Loading..." : "Send Message"}
+      </ButtonIcon>
     </form>
   );
 };
