@@ -33,7 +33,7 @@ const WorkExperience = () => {
             </div>
 
             <div className="space-y-2">
-              <h3 className="font-semibold text-primary-dark-500">The responsibilites include:</h3>
+              <h3 className="font-semibold text-primary-dark-500">The responsibilities include:</h3>
               <ul className="list-disc ml-4 space-y-1 text-primary-dark-500">
                 {responsibilities?.map((item, index) => (
                   <li key={index} className="text-sm leading-6">
