@@ -35,14 +35,14 @@ const NavbarMobile = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.35, ease: "easeInOut" }}
             >
               <motion.div
                 className="fixed right-0 flex justify-end drop-shadow-2xl w-full"
                 initial={{ x: "100%" }}
                 animate={{ x: 0 }}
                 exit={{ x: "100%" }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.35, ease: "easeInOut" }}
               >
                 <div className="bg-[#0c0c0c] w-2/3 min-h-screen border-l border-l-primary-dark-600">
                   <nav className="px-5 py-10">
