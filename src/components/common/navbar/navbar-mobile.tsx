@@ -42,7 +42,7 @@ const NavbarMobile = () => {
                 initial={{ x: "100%" }}
                 animate={{ x: 0 }}
                 exit={{ x: "100%" }}
-                transition={{ duration: 0.4 }}
+                transition={{ duration: 0.3 }}
               >
                 <div className="bg-[#0c0c0c] w-2/3 min-h-screen border-l border-l-primary-dark-600">
                   <nav className="px-5 py-10">
