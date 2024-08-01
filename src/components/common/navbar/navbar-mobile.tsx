@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { getAssetUrl } from "@/lib/utils";
 import { navbarItems } from "@/constants/constants";
@@ -27,30 +28,42 @@ const NavbarMobile = () => {
           </button>
         </div>
 
-        <div
-          className={`fixed w-100 ${showMenu ? "opacity-100 w-full" : "opacity-0 -left-full"} left-0  top-0 bg-black/50 min-h-screen backdrop-blur-[2px]`}
-        >
-          <div
-            className={`fixed ${showMenu ? "right-0 w-full" : "-right-full"} flex justify-end drop-shadow-2xl transition-all duration-200`}
-          >
-            <div className="bg-[#0c0c0c] w-1/2 min-h-screen border-l border-l-primary-dark-600">
-              <nav className="px-5 py-10">
-                <ul className="flex flex-col gap-4">
-                  {navbarItems.map(({ href, label }) => (
-                    <Link href={href} key={href} onClick={handleShowMenu}>
-                      <li className="relative text-sm group">
-                        <span className="inline-block relative">
-                          {label}
-                          <span className="absolute left-0 bottom-0 h-0.5 bg-current w-full scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-out origin-left" />
-                        </span>
-                      </li>
-                    </Link>
-                  ))}
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
+        <AnimatePresence>
+          {showMenu && (
+            <motion.div
+              className="fixed w-full left-0 top-0 bg-black/50 min-h-screen backdrop-blur-[2px]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+            >
+              <motion.div
+                className="fixed right-0 flex justify-end drop-shadow-2xl w-full"
+                initial={{ x: "100%" }}
+                animate={{ x: 0 }}
+                exit={{ x: "100%" }}
+                transition={{ duration: 0.4 }}
+              >
+                <div className="bg-[#0c0c0c] w-2/3 min-h-screen border-l border-l-primary-dark-600">
+                  <nav className="px-5 py-10">
+                    <ul className="flex flex-col gap-4">
+                      {navbarItems.map(({ href, label }) => (
+                        <Link href={href} key={href} onClick={handleShowMenu}>
+                          <li className="relative text-sm group">
+                            <span className="inline-block relative">
+                              {label}
+                              <span className="absolute left-0 bottom-0 h-0.5 bg-current w-full scale-x-0 group-hover:scale-x-100 transition-transform duration-200 ease-out origin-left" />
+                            </span>
+                          </li>
+                        </Link>
+                      ))}
+                    </ul>
+                  </nav>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </header>
   );
