@@ -1,4 +1,4 @@
-# Vicky Herdiansyah Adri - Personal Website
+# Personal Website 🔥
 
 ## Technologies used:
 
