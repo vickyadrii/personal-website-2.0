@@ -1,4 +1,4 @@
-# Vicky Herdiansyah Adri - Personal Website
+# Personal Website 🔥
 
 ## Technologies used:
 
@@ -44,7 +44,7 @@ Start the NextJS server:
 
 ## ----------------------------------------------------------------------------------------
 
-- Figma Design: [Click here](https://www.figma.com/file/ZdY2aK5cHCDoDVzfEVnLsu/Website-2.0)
+- Figma Design: [Click here](https://www.figma.com/design/x1Xi3a4HqSwH5ASvyowM5v/Personal-Website-2.0)
 - Link demo: https://vickyadrii.my.id
 
 ## Built With
