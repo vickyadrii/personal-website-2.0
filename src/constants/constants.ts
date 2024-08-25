@@ -124,32 +124,32 @@ export const projects: Project[] = [
     id: 0,
     thumbnail: "/images/village-web.png",
     name: "Website Desa",
-    summary:
-      "Lorem ipsum dolor sit amet consectetur. Phasellus eros ante vitae et. Tortor in sed ut ipsum proin amet nisl dictum. Sit auctor sem eget lorem lectus amet nunc.",
+    summary: "A platform designed for villages to create and customize their landing page websites.",
     tech_stacks: ["React", "Tailwind", "Ant Design", "Context"],
+    url: "https://desa.kembalikedesa.id",
   },
   {
     id: 1,
     thumbnail: "/images/village-web.png",
     name: "Website Desa",
-    summary:
-      "Lorem ipsum dolor sit amet consectetur. Phasellus eros ante vitae et. Tortor in sed ut ipsum proin amet nisl dictum. Sit auctor sem eget lorem lectus amet nunc.",
+    summary: "A platform designed for villages to create and customize their landing page websites.",
     tech_stacks: ["React", "Vite", "Tailwind"],
+    url: "https://desa.kembalikedesa.id",
   },
   {
     id: 2,
     thumbnail: "/images/village-web.png",
     name: "Website Desa",
-    summary:
-      "Lorem ipsum dolor sit amet consectetur. Phasellus eros ante vitae et. Tortor in sed ut ipsum proin amet nisl dictum. Sit auctor sem eget lorem lectus amet nunc.",
+    summary: "A platform designed for villages to create and customize their landing page websites.",
     tech_stacks: ["React", "Vite", "Tailwind"],
+    url: "https://desa.kembalikedesa.id",
   },
   {
     id: 3,
     thumbnail: "/images/village-web.png",
     name: "Website Desa",
-    summary:
-      "Lorem ipsum dolor sit amet consectetur. Phasellus eros ante vitae et. Tortor in sed ut ipsum proin amet nisl dictum. Sit auctor sem eget lorem lectus amet nunc.",
+    summary: "A platform designed for villages to create and customize their landing page websites.",
     tech_stacks: ["React", "Vite", "Tailwind"],
+    url: "https://desa.kembalikedesa.id",
   },
 ];
