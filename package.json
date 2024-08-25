@@ -12,8 +12,12 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@next/mdx": "^14.2.6",
     "@react-email/components": "0.0.22",
     "@react-email/tailwind": "^0.0.19",
+    "@types/mdx": "^2.0.13",
     "framer-motion": "^11.3.19",
     "next": "14.2.5",
     "react": "^18",

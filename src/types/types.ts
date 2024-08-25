@@ -24,7 +24,6 @@ export type Project = {
   name: string;
   summary: string;
   tech_stacks: string[];
-  url: string;
 };
 
 export type EmailMessage = {

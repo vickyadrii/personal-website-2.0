@@ -19,7 +19,7 @@ export const navbarItems: NavbarItem[] = [
   },
   // {
   //   label: "Blog",
-  //   href: "#blog",
+  //   href: "/blog",
   // },
 ];
 
@@ -125,31 +125,28 @@ export const projects: Project[] = [
     thumbnail: "/images/village-web.png",
     name: "Website Desa",
     summary: "A platform designed for villages to create and customize their landing page websites.",
-    tech_stacks: ["React", "Tailwind", "Ant Design", "Context"],
-    url: "https://desa.kembalikedesa.id",
+    tech_stacks: ["React", "Tailwind", "Ant Design", "Zustand"],
   },
   {
     id: 1,
-    thumbnail: "/images/village-web.png",
-    name: "Website Desa",
-    summary: "A platform designed for villages to create and customize their landing page websites.",
-    tech_stacks: ["React", "Vite", "Tailwind"],
-    url: "https://desa.kembalikedesa.id",
+    thumbnail: "/images/badonordarah.png",
+    name: "Badonordarah",
+    summary: "Facilitate blood donation and assist those in need of blood in Palu city.",
+    tech_stacks: ["React", "Vite", "Tailwind", "ExpressJS", "MySQL"],
   },
   {
     id: 2,
-    thumbnail: "/images/village-web.png",
-    name: "Website Desa",
-    summary: "A platform designed for villages to create and customize their landing page websites.",
-    tech_stacks: ["React", "Vite", "Tailwind"],
-    url: "https://desa.kembalikedesa.id",
+    thumbnail: "/images/hrev.png",
+    name: "HREV",
+    summary: "HREV is a software house specializing in software development and IT services",
+    tech_stacks: ["React", "Typescript", "Vite", "Tailwind"],
   },
   {
     id: 3,
-    thumbnail: "/images/village-web.png",
-    name: "Website Desa",
-    summary: "A platform designed for villages to create and customize their landing page websites.",
+    thumbnail: "/images/sn-residence.png",
+    name: "SN Residence",
+    summary:
+      "SN Residence is a subsidized housing development with a unique concept and the highest quality standards and ensuring it is flood-free.",
     tech_stacks: ["React", "Vite", "Tailwind"],
-    url: "https://desa.kembalikedesa.id",
   },
 ];
