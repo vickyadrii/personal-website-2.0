@@ -96,7 +96,7 @@ const ContactForm = () => {
               value={emailMessage.message}
               onChange={(event) => handleOnChange(event.target.id, event.target.value)}
               className="bg-transparent border-b-2 border-b-primary-dark-600 outline-none pb-2 md:text-base text-sm focus:border-b-primary-dark-500 transition-all duration-150 ease-in resize-none"
-              rows={4}
+              rows={6}
             />
           </div>
         </div>
