@@ -18,12 +18,15 @@ const NavbarMobile = () => {
     <header className="sticky top-0 md:p-0 p-5 w-full">
       <div className="md:hidden relative">
         <div className="absolute right-0 z-50">
-          <button onClick={handleShowMenu} className="p-1 border-2 rounded-md bg-black/60 backdrop-blur-sm">
+          <button
+            onClick={handleShowMenu}
+            className="p-1 border-[1.5px] border-primary-dark-600 bg-primary-dark-700 rounded-md backdrop-blur-sm"
+          >
             <Image
               src={getAssetUrl(showMenu ? "/icons/ic_close.svg" : "/icons/ic_hamburger.svg")}
               alt="ic_menu"
-              width={16}
-              height={16}
+              width={18}
+              height={18}
             />
           </button>
         </div>
@@ -44,7 +47,7 @@ const NavbarMobile = () => {
                 exit={{ x: "100%" }}
                 transition={{ duration: 0.35, ease: "easeOut" }}
               >
-                <div className="bg-[#0c0c0c] w-1/2 min-h-screen border-l border-l-primary-dark-600">
+                <div className="bg-primary-dark-950 w-1/2 min-h-screen border-l border-l-primary-dark-800">
                   <nav className="px-5 py-10">
                     <ul className="flex flex-col gap-4">
                       {navbarItems.map(({ href, label }) => (

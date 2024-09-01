@@ -45,23 +45,36 @@ export const socialMedia: SocialMedia[] = [
 export const workExperience: Activity[] = [
   {
     id: 0,
+    logo: "/icons/ic_pegadaian.png",
+    company_name: "PT. Pegadaian",
+    title: "Fullstack Engineer",
+    period: "Aug 2024 - Present",
+    tech_stacks: ["JavaScript", "TypeScript", "VueJS", "NestJS", "PostgreSQL"],
+    responsibilities: [
+      "Built custom components for reusability.",
+      "Implemented the unit tests and ensured the tests passed.",
+      "Maintaned and improved their apps, while implementing clean code practices.",
+    ],
+  },
+  {
+    id: 1,
     logo: "/icons/ic_eduqat.svg",
     company_name: "Eduqat",
     title: "Frontend Engineer",
-    period: "Jan 2023 - Present",
+    period: "Jan 2023 - Jul 2024",
     tech_stacks: ["JavaScript", "React", "NextJS", "Redux", "GraphQL", "Styled-Components", "Tailwind"],
     responsibilities: [
       "Migrated the platform's styling from the usage of Styled-components and Ant Design to Tailwind.",
-      "Built, maintained, and improved Eduqat’s platform, while implementing clean code practices, and agile methodologies.",
+      "Built, maintained, and improved Eduqat’s platform, while implementing clean code practices and agile methodologies.",
       "Developed an assignment feature for educators and students that allowed educators to create assignment materials, publish scores, view attachments from students, and provide feedback to their students.",
       "Developed a drip course feature that enabled educators to manage access to materials for their students. When the drip course was enabled, students could access materials after enrolling in the previous material.",
     ],
   },
   {
-    id: 1,
+    id: 2,
     logo: "/icons/ic_kalla.svg",
     company_name: "Kalla Group",
-    title: "Web Developer",
+    title: "Web Developer Intern",
     period: "Aug 2022 - Dec 2022",
     tech_stacks: ["JavaScript", "React", "NextJS", "NodeJS", "ExpressJS", "MySQL", "Tailwind"],
     responsibilities: [
@@ -70,18 +83,18 @@ export const workExperience: Activity[] = [
       "Developed reusable components within projects, reduced redundancy, and enhanced feature consistency.",
     ],
   },
-  {
-    id: 2,
-    logo: "/icons/ic_kodingna.png",
-    company_name: "Kodingna",
-    title: "Frontend Web Developer",
-    period: "Aug 2022 - Dec 2022",
-    tech_stacks: ["JavaScript", "React", "Tailwind", "Figma", "Agile Methodology"],
-    responsibilities: [
-      "Designed and Developed a company profile website.",
-      "Wrote clean and maintainable code following best practices and coding standards.",
-    ],
-  },
+  // {
+  //   id: 3,
+  //   logo: "/icons/ic_kodingna.png",
+  //   company_name: "Kodingna",
+  //   title: "Frontend Web Developer",
+  //   period: "Aug 2022 - Dec 2022",
+  //   tech_stacks: ["JavaScript", "React", "Tailwind", "Figma", "Agile Methodology"],
+  //   responsibilities: [
+  //     "Designed and Developed a company profile website.",
+  //     "Wrote clean and maintainable code following best practices and coding standards.",
+  //   ],
+  // },
 ];
 
 export const activities: Activity[] = [
@@ -114,7 +127,7 @@ export const activities: Activity[] = [
     logo: "/icons/ic_programming-tadulako.png",
     company_name: "Programming Tadulako",
     title: "Web Development Mentor",
-    period: "Nov 2021 - Nov 2021",
+    period: "Nov 2021 - Nov 2022",
     tech_stacks: ["JavaScript", "React", "HTML5", "CSS3", "Git"],
   },
 ];
