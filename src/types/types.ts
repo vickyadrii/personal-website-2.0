@@ -14,7 +14,7 @@ export type Activity = {
   company_name: string;
   title: string;
   period: string;
-  tech_stacks: string[];
+  tech_stacks?: string[];
   responsibilities?: string[];
 };
 

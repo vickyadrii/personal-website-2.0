@@ -49,10 +49,10 @@ export const workExperience: Activity[] = [
     company_name: "PT. Pegadaian",
     title: "Fullstack Engineer",
     period: "Aug 2024 - Present",
-    tech_stacks: ["JavaScript", "TypeScript", "VueJS", "NestJS", "PostgreSQL"],
+    tech_stacks: ["JavaScript", "TypeScript", "VueJS", "NestJS", "PostgreSQL", "Redis"],
     responsibilities: [
       "Built custom components for reusability.",
-      "Implemented the unit tests and ensured the tests passed.",
+      "Implemented the unit tests and ensured the tests were passed.",
       "Maintaned and improved their apps, while implementing clean code practices.",
     ],
   },
@@ -104,15 +104,13 @@ export const activities: Activity[] = [
     company_name: "Bearmentor",
     title: "Frontend Mentor",
     period: "Jun 2024 - Present",
-    tech_stacks: ["HTML5", "CSS3", "Git", "Figma", "Tailwind"],
   },
   {
     id: 1,
     logo: "/icons/ic_hammercode.svg",
     company_name: "HammerCode",
     title: "Frontend Mentor",
-    period: "May 2023 - Present",
-    tech_stacks: ["JavaScript", "TypeScript", "React", "NextJS", "HTML5", "CSS3", "Tailwind", "Git"],
+    period: "May 2023 - May 2024",
   },
   {
     id: 2,
@@ -120,7 +118,6 @@ export const activities: Activity[] = [
     company_name: "Bangkit Academy",
     title: "Cloud Computing Path",
     period: "Feb 2022 - Jul 2022",
-    tech_stacks: ["Google Cloud Platform", "Web Development", "Soft-skills", "English Class"],
   },
   {
     id: 3,
@@ -128,7 +125,6 @@ export const activities: Activity[] = [
     company_name: "Programming Tadulako",
     title: "Web Development Mentor",
     period: "Nov 2021 - Nov 2022",
-    tech_stacks: ["JavaScript", "React", "HTML5", "CSS3", "Git"],
   },
 ];
 

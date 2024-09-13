@@ -15,18 +15,16 @@ const WorkExperience = () => {
             <div className="flex md:items-center justify-between">
               <div className="flex md:items-center gap-2">
                 <Image src={getAssetUrl(logo)} alt="logo" width={48} height={48} className="md:block hidden" />
-                <div className="space-y-1">
-                  <h3 className="md:text-xl text-base font-bold">{company_name}</h3>
-                  <p className="md:text-base text-xs text-primary-dark-500">{title}</p>
+                <div className="space-y-0.5">
+                  <h3 className="md:text-lg text-sm font-bold">{company_name}</h3>
+                  <p className="md:text-base text-xs text-gray-300">{title}</p>
                 </div>
               </div>
-              <p className="md:text-base text-xs text-primary-dark-500 md:mt-0 mt-1">{period}</p>
+              <p className="md:text-sm text-xs text-primary-dark-500 md:mt-0 mt-1">{period}</p>
             </div>
 
             <div className="flex items-center gap-2 flex-wrap">
-              {tech_stacks.map((item, index) => (
-                <Badge key={index}>{item}</Badge>
-              ))}
+              {tech_stacks?.map((item, index) => <Badge key={index}>{item}</Badge>)}
             </div>
 
             <div className="space-y-2">
