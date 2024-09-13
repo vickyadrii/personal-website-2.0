@@ -23,7 +23,7 @@ const Navbar = () => {
               opacity: 0,
             }));
           }}
-          className="relative mx-auto flex w-fit bg-primary-dark-800/80 border-2 border-primary-dark-600 rounded-full backdrop-blur-sm p-1"
+          className="relative mx-auto flex w-fit bg-primary-dark-800/80 border-2 border-primary-dark-600 rounded-full backdrop-blur-sm p-2"
         >
           {navbarItems.map(({ href, label }) => (
             <Link key={href} href={href}>
@@ -36,7 +36,7 @@ const Navbar = () => {
                     left: offsetLeft,
                   });
                 }}
-                className="relative z-10 block cursor-pointer text-white md:px-5 md:py-3 px-3 py-1.5 text-sm mix-blend-difference"
+                className="relative z-10 block cursor-pointer text-white/80 md:px-5 md:py-2.5 px-3 py-1.5 text-sm mix-blend-difference"
               >
                 {label}
               </li>
