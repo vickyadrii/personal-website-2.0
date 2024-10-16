@@ -11,7 +11,7 @@ const Activities = () => {
       <TitleSection title="Activities" description="I love teaching! So, here are my activities and being a mentor:" />
 
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-4 pb-8">
-        {activities.map(({ id, logo, company_name, title, period }) => (
+        {activities.map(({ id, logo, company_name, title }) => (
           <div key={id} className="space-y-5">
             <div className="flex justify-between gap-2">
               <div className="flex md:items-center gap-2">
@@ -21,7 +21,7 @@ const Activities = () => {
                   <p className="md:text-base text-xs text-gray-300">{title}</p>
                 </div>
               </div>
-              <p className="md:text-sm text-xs text-primary-dark-500 mt-1">{period}</p>
+              {/* <p className="md:text-sm text-xs text-primary-dark-500 mt-1">{period}</p> */}
             </div>
           </div>
         ))}

@@ -7,7 +7,7 @@ const HeroSection = () => {
       <h1 className="gradient-text md:text-5xl text-3xl md:h-14 inline-block font-bold">Fullstack Engineer</h1>
 
       <p className="text-primary-dark-500 md:text-base text-sm md:leading-8 leading-6">
-        Frontend Engineer with 3+ years of experience in web applications. <br /> Currently transitioning to Fullstack
+        Frontend Engineer with 2+ years of experience in web applications. <br /> Currently transitioning to Fullstack
         Engineer.
       </p>
       <SocialMedia />

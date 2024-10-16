@@ -12,6 +12,7 @@ export type Activity = {
   id: number;
   logo: string;
   company_name: string;
+  company_url?: string;
   title: string;
   period: string;
   tech_stacks?: string[];

@@ -3,6 +3,7 @@ import Badge from "@/components/ui/badge/badge";
 import { workExperience } from "@/constants/constants";
 import { getAssetUrl } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 const WorkExperience = () => {
   return (
@@ -10,13 +11,15 @@ const WorkExperience = () => {
       <TitleSection title="Work Experience" description="Here are my work experience and career highlights:" />
 
       <div className="space-y-8 pb-8">
-        {workExperience.map(({ id, logo, company_name, title, period, tech_stacks, responsibilities }) => (
+        {workExperience.map(({ id, logo, company_name, company_url, title, period, tech_stacks, responsibilities }) => (
           <div key={id} className="space-y-4">
             <div className="flex md:items-center justify-between">
               <div className="flex md:items-center gap-2">
                 <Image src={getAssetUrl(logo)} alt="logo" width={48} height={48} className="md:block hidden" />
                 <div className="space-y-0.5">
-                  <h3 className="md:text-lg text-sm font-bold">{company_name}</h3>
+                  <Link href={company_url ?? ""}>
+                    <h3 className="md:text-lg text-sm font-bold">{company_name}</h3>
+                  </Link>
                   <p className="md:text-base text-xs text-gray-300">{title}</p>
                 </div>
               </div>
