@@ -1,4 +1,4 @@
-# Personal Website 🔥
+# Personal Website
 
 ## Technologies used:
 
