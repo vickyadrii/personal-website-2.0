@@ -52,9 +52,9 @@ export const workExperience: Activity[] = [
     period: "Aug 2024 - Present",
     tech_stacks: ["JavaScript", "TypeScript", "VueJS", "NestJS", "Laravel", "PostgreSQL", "Redis"],
     responsibilities: [
-      "Built custom components for reusability.",
-      "Implemented the unit tests and ensured the tests were passed.",
-      "Maintaned and improved their apps, while implementing clean code practices.",
+      "Migrated JavaScript codebases to TypeScript in an employee attendance app to simplify debugging, and minimize errors, resulting in a reliable development experience.",
+      "Refactored components from Option API to Composition API for better scalability and maintainability.",
+      "Built and implemented custom components to reusability across projects, and reduce code duplication.",
     ],
   },
   {
