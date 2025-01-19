@@ -8,10 +8,10 @@ import TitleSection from "@/components/common/title-section/title-section";
 const Activities = () => {
   return (
     <section id="activities" className="space-y-8 pt-8 border-b border-b-primary-dark-600">
-      <TitleSection title="Activities" description="I love teaching! So, here are my activities and being a mentor:" />
+      <TitleSection title="Activities" description="Here are my activities and being a mentor:" />
 
       <div className="grid lg:grid-cols-2 grid-cols-1 lg:gap-10 gap-4 pb-8">
-        {activities.map(({ id, logo, company_name, title }) => (
+        {activities.map(({ id, logo, company_name, period, title }) => (
           <div key={id} className="space-y-5">
             <div className="flex justify-between gap-2">
               <div className="flex md:items-center gap-2">
@@ -21,7 +21,7 @@ const Activities = () => {
                   <p className="md:text-base text-xs text-gray-300">{title}</p>
                 </div>
               </div>
-              {/* <p className="md:text-sm text-xs text-primary-dark-500 mt-1">{period}</p> */}
+              <p className="md:text-sm text-xs text-primary-dark-500 mt-1">{period}</p>
             </div>
           </div>
         ))}

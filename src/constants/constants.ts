@@ -134,31 +134,39 @@ export const activities: Activity[] = [
 export const projects: Project[] = [
   {
     id: 0,
-    thumbnail: "/images/village-web.png",
-    name: "Website Desa",
-    summary: "A platform designed for villages to create and customize their landing page websites.",
-    tech_stacks: ["React", "Tailwind", "Ant Design", "Zustand"],
+    thumbnail: "/images/daily-course.png",
+    name: "Daily Course",
+    summary:
+      "Daily Course is a learning platform for those who want to learn about technologies in a fun and chill way.",
+    tech_stacks: ["NextJS", "Tailwind", "ShadcnUI", "Go", "PostgreSQL"],
   },
   {
     id: 1,
+    thumbnail: "/images/village-web.png",
+    name: "Website Desa",
+    summary: "A platform designed for villages to create and customize their landing page websites.",
+    tech_stacks: ["React", "Laravel", "Tailwind", "Zustand", "MySQL"],
+  },
+  {
+    id: 2,
     thumbnail: "/images/badonordarah.png",
     name: "Badonordarah",
     summary: "Facilitate blood donation and assist those in need of blood in Palu city.",
     tech_stacks: ["React", "Vite", "Tailwind", "ExpressJS", "MySQL"],
   },
   {
-    id: 2,
+    id: 3,
     thumbnail: "/images/hrev.png",
     name: "HREV",
     summary: "HREV is a software house specializing in software development and IT services",
     tech_stacks: ["React", "Typescript", "Vite", "Tailwind"],
   },
-  {
-    id: 3,
-    thumbnail: "/images/sn-residence.png",
-    name: "SN Residence",
-    summary:
-      "SN Residence is a subsidized housing development with a unique concept and the highest quality standards and ensuring it is flood-free.",
-    tech_stacks: ["React", "Vite", "Tailwind"],
-  },
+  // {
+  //   id: 4,
+  //   thumbnail: "/images/sn-residence.png",
+  //   name: "SN Residence",
+  //   summary:
+  //     "SN Residence is a subsidized housing development with a unique concept and the highest quality standards and ensuring it is flood-free.",
+  //   tech_stacks: ["React", "Vite", "Tailwind"],
+  // },
 ];
